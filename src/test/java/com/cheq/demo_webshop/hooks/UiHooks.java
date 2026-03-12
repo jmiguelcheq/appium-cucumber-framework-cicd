@@ -13,6 +13,7 @@ import com.cheq.demo_webshop.manager.DriverManager;
 import com.cheq.demo_webshop.utils.AllureEnvironmentUtil;
 import com.cheq.demo_webshop.utils.AllureUtil;
 import com.cheq.demo_webshop.utils.LoggerUtil;
+import com.cheq.demo_webshop.utils.ConfigReader;
 import com.google.common.collect.ImmutableMap;
 
 public class UiHooks {
@@ -23,21 +24,25 @@ public class UiHooks {
 
     @Before(value = "@ui", order = 1)
     public void setUpUi(Scenario scenario) throws Exception {
-        String url = com.cheq.demo_webshop.utils.ConfigReader.get("baseUrl");
+        String env = System.getProperty("env", "dev");
+        ConfigReader.loadProperties(env);
+
+        String url = System.getProperty("baseUrl", ConfigReader.get("baseUrl"));
 
         driver = AndroidDriverFactory.loadDriver();
-        driver.get(url);
-
         DriverManager.setDriver(driver);
+
+        driver.get(url);
 
         allureUtil = new AllureUtil(driver);
         AllureEnvironmentUtil.writeEnvironment(
-        	    ImmutableMap.<String, String>builder()
-        	        .put("OS", System.getProperty("os.name"))
-        	        .put("Environment", System.getProperty("env", "dev"))
-        	        .put("ExecutionType", "UI")
-        	        .build()
-        	);
+            ImmutableMap.<String, String>builder()
+                .put("OS", System.getProperty("os.name"))
+                .put("Environment", env)
+                .put("ExecutionType", "UI")
+                .put("BaseURL", url)
+                .build()
+        );
 
         logger.info("UI setup completed for scenario: {}", scenario.getName());
     }
@@ -54,14 +59,22 @@ public class UiHooks {
     @After(order = 1, value = "@ui")
     public void captureFailure(Scenario scenario) {
         if (scenario.isFailed() && allureUtil != null) {
-            allureUtil.captureAndAttachScreenshot();
+            try {
+                allureUtil.captureAndAttachScreenshot();
+            } catch (Exception e) {
+                logger.warn("Skipping failure screenshot for scenario {}: {}", scenario.getName(), e.getMessage());
+            }
         }
     }
 
     @AfterStep(value = "@ui")
     public void afterEachStep(Scenario scenario) {
         if (allureUtil != null) {
-            allureUtil.captureAndAttachScreenshot();
+            try {
+                allureUtil.captureAndAttachScreenshot();
+            } catch (Exception e) {
+                logger.warn("Skipping step screenshot for scenario {}: {}", scenario.getName(), e.getMessage());
+            }
         }
     }
 }
