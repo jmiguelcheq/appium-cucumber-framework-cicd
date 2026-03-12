@@ -2,7 +2,7 @@ name: Run Appium Cucumber Tests on repository_dispatch
 
 on:
   repository_dispatch:
-    types: [ run-mobile-tests ]
+    types: [run-mobile-tests]
   workflow_dispatch:
     inputs:
       base_url:
@@ -17,7 +17,7 @@ on:
 jobs:
   mobile-tests:
     name: Appium + Android Emulator + Cucumber
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     timeout-minutes: 45
 
     env:
@@ -56,6 +56,13 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Enable KVM access for Android emulator
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | \
+            sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
       - name: Install Appium
         run: |
           npm install -g appium
@@ -76,18 +83,31 @@ jobs:
           target: google_apis
           arch: x86_64
           profile: pixel_6
-          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
+          emulator-boot-timeout: 900
           disable-animations: true
+          emulator-options: >-
+            -no-window
+            -gpu swiftshader_indirect
+            -no-snapshot
+            -noaudio
+            -no-boot-anim
           script: |
             adb devices
-            adb shell settings put global window_animation_scale 0
-            adb shell settings put global transition_animation_scale 0
-            adb shell settings put global animator_duration_scale 0
+            adb wait-for-device
+
+            # Give the launcher a moment after the runner reports boot ready
+            sleep 20
+
+            # Optional diagnostics
+            adb shell getprop ro.build.version.release || true
+            adb shell settings put global window_animation_scale 0 || true
+            adb shell settings put global transition_animation_scale 0 || true
+            adb shell settings put global animator_duration_scale 0 || true
 
             echo "Running tests against: ${BASE_URL}"
 
             mvn -B clean test \
-              -Dcucumber.filter.tags="@ui and @cicd" \
+              -Dcucumber.filter.tags="@cicd" \
               -DbaseUrl="${BASE_URL}" \
               -DplatformName=Android \
               -DbrowserName=Chrome \
