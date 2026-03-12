@@ -73,9 +73,20 @@ jobs:
           appium driver install uiautomator2
           appium -v
 
+      - name: Prepare Chromedriver cache folder
+        run: |
+          mkdir -p "$RUNNER_TEMP/chromedrivers"
+          echo "{}" > "$RUNNER_TEMP/chromedriver-mapping.json"
+          ls -la "$RUNNER_TEMP"
+          ls -la "$RUNNER_TEMP/chromedrivers"
+
       - name: Start Appium server
         run: |
-          nohup appium --address 127.0.0.1 --port ${APPIUM_PORT} > appium.log 2>&1 &
+          nohup appium server \
+            --address 127.0.0.1 \
+            --port ${APPIUM_PORT} \
+            --allow-insecure uiautomator2:chromedriver_autodownload \
+            > appium.log 2>&1 &
           echo $! > appium.pid
           sleep 10
           cat appium.log
@@ -104,10 +115,11 @@ jobs:
             adb shell settings put global window_animation_scale 0 || true
             adb shell settings put global transition_animation_scale 0 || true
             adb shell settings put global animator_duration_scale 0 || true
+            adb shell dumpsys package com.android.chrome | grep versionName || true
 
             echo "Running tests against: ${BASE_URL}"
 
-            mvn -B clean test -Dcucumber.filter.tags='@ui and @cicd' -DbaseUrl="${BASE_URL}" -DplatformName=Android -DplatformVersion=14 -DbrowserName=Chrome -DdeviceName=emulator-5554 -Dappium.server.url="http://127.0.0.1:${APPIUM_PORT}"
+            mvn -B clean test -Dcucumber.filter.tags='@ui and @cicd' -DbaseUrl="${BASE_URL}" -DplatformName=Android -DplatformVersion=14 -DbrowserName=Chrome -DdeviceName=emulator-5554 -Dappium.server.url="http://127.0.0.1:${APPIUM_PORT}" -DchromedriverExecutableDir="${RUNNER_TEMP}/chromedrivers" -DchromedriverChromeMappingFile="${RUNNER_TEMP}/chromedriver-mapping.json"
 
       # ---------- Reports & artifacts ----------
       - name: Upload raw test reports (Surefire/Cucumber/Allure results)
@@ -164,4 +176,14 @@ jobs:
         with:
           name: appium-log
           path: appium.log
+          if-no-files-found: warn
+
+      - name: Upload downloaded Chromedrivers
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: chromedrivers-cache
+          path: |
+            ${{ runner.temp }}/chromedrivers
+            ${{ runner.temp }}/chromedriver-mapping.json
           if-no-files-found: warn
