@@ -1,4 +1,4 @@
-@api @cicd
+@ui @cicd
 Feature: API uptime check for calculator site
   Scenario: Site returns HTTP 200 on GET /
     Given I have the calculator base URL
