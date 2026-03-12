@@ -94,15 +94,40 @@ jobs:
               -DdeviceName=emulator-5554 \
               -Dappium.server.url="http://127.0.0.1:${APPIUM_PORT}"
 
-      - name: Upload test artifacts
-        if: ${{ always() }}
+      # ---------- Reports & artifacts ----------
+      - name: Upload raw test reports (Surefire/Cucumber/Allure results)
+        if: ${{ failure() || success() }}
         uses: actions/upload-artifact@v4
         with:
-          name: mobile-test-artifacts
+          name: test-reports
           path: |
-            appium.log
             **/target/surefire-reports/**
             **/target/cucumber-reports/**
             **/target/allure-results/**
-            allure-results/**
-            logs/**
+
+      - name: Generate Allure HTML (folder)
+        if: ${{ always() }}
+        run: |
+          allure generate target/allure-results --clean -o allure-report
+          if [ -f allure-report/widgets/summary.json ]; then
+            echo "Allure summary found."
+          fi
+
+      - name: Upload Allure HTML (folder)
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-html
+          path: allure-report
+
+      - name: Generate Allure single-file report
+        if: ${{ always() }}
+        run: |
+          allure generate target/allure-results --single-file --clean -o target/allure-single
+
+      - name: Upload Allure single-file report
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-single-file
+          path: target/allure-single
