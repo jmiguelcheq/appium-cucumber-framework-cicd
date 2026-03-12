@@ -3,7 +3,6 @@ package com.cheq.demo_webshop.factory;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 
-import java.io.File;
 import java.net.URI;
 import java.net.URL;
 
@@ -15,14 +14,6 @@ import com.cheq.demo_webshop.utils.ConfigReader;
  */
 public class AndroidDriverFactory {
 
-    /**
-     * Initializes the AndroidDriver instance for the current thread.
-     *
-     * Sets up the driver with UiAutomator2 options for Chrome browser automation
-     * on an Android device.
-     *
-     * @throws Exception
-     */
     public static AndroidDriver loadDriver() throws Exception {
 
         String env = System.getProperty("env", "dev");
@@ -33,7 +24,6 @@ public class AndroidDriverFactory {
         String platformVersion = System.getProperty("platformVersion", ConfigReader.get("platformVersion"));
         String automationName = System.getProperty("automationName", ConfigReader.get("automationName"));
         String browserName = System.getProperty("browserName", ConfigReader.get("browserName"));
-        String chromeDriverFilePath = System.getProperty("chromedriverPath", ConfigReader.get("chromedriverPath"));
         String urlPath = System.getProperty("appium.server.url", ConfigReader.get("urlPath"));
 
         UiAutomator2Options options = new UiAutomator2Options();
@@ -48,9 +38,6 @@ public class AndroidDriverFactory {
 
             options.setAutomationName(automationName);
             options.setCapability("browserName", browserName);
-
-            String chromeDriverPath = new File(chromeDriverFilePath).getAbsolutePath();
-            options.setCapability("chromedriverExecutable", chromeDriverPath);
 
             URL url = URI.create(urlPath).toURL();
             AndroidDriver driver = new AndroidDriver(url, options);
