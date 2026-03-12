@@ -46,6 +46,9 @@ public class AndroidDriverFactory {
             if (!chromedriverChromeMappingFile.isBlank()) {
                 options.setCapability("chromedriverChromeMappingFile", chromedriverChromeMappingFile);
             }
+            
+            options.setCapability("showChromedriverLog", true);
+            options.setCapability("nativeWebScreenshot", true);
 
             URL url = URI.create(urlPath).toURL();
             AndroidDriver driver = new AndroidDriver(url, options);

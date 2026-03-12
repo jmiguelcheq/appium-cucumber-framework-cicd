@@ -35,13 +35,25 @@ public class AllureUtil {
 		}
 
 	public void captureAndAttachScreenshot() {
-		if (driver == null) {
-	        return;
-	    }
+//		if (driver == null) {
+//	        return;
+//	    }
+//		
+//		byte[] screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+//		Allure.getLifecycle().updateStep(s -> s.setName("📸 " + StepListener.currentStep)); // override name
+//		Allure.addAttachment("Screenshot", "image/png", new ByteArrayInputStream(screenshotBytes), ".png");
 		
-		byte[] screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-		Allure.getLifecycle().updateStep(s -> s.setName("📸 " + StepListener.currentStep)); // override name
-		Allure.addAttachment("Screenshot", "image/png", new ByteArrayInputStream(screenshotBytes), ".png");
+		try {
+			if (driver == null) {
+		        return;
+		    }
+			
+			byte[] screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+			Allure.getLifecycle().updateStep(s -> s.setName("📸 " + StepListener.currentStep)); // override name
+			Allure.addAttachment("Screenshot", "image/png", new ByteArrayInputStream(screenshotBytes), ".png");
+	    } catch (Exception e) {
+	        System.out.println("Skipping screenshot capture: " + e.getMessage());
+	    }
 	}
 
 //	public void writeAllureEnvironment(Map<String, String> env) {
