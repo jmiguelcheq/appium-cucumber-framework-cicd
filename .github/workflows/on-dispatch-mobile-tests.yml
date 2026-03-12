@@ -1,0 +1,108 @@
+name: Run Appium Cucumber Tests on repository_dispatch
+
+on:
+  repository_dispatch:
+    types: [ run-mobile-tests ]
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: "Target URL to test"
+        required: false
+        default: "https://jmiguelcheq.github.io/appium-cucumber-calculator-staging/"
+      target_env:
+        description: "Environment name"
+        required: false
+        default: "staging"
+
+jobs:
+  mobile-tests:
+    name: Appium + Android Emulator + Cucumber
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    env:
+      BASE_URL: ${{ github.event.client_payload.base_url || inputs.base_url || 'https://jmiguelcheq.github.io/appium-cucumber-calculator-staging/' }}
+      TARGET_ENV: ${{ github.event.client_payload.target_env || inputs.target_env || 'staging' }}
+      SOURCE_REPO: ${{ github.event.client_payload.source_repo || '' }}
+      APPIUM_PORT: "4723"
+
+    steps:
+      - name: Validate sender
+        if: ${{ github.event_name == 'repository_dispatch' }}
+        run: |
+          EXPECTED="jmiguelcheq/appium-cucumber-calculator-staging"
+          ACTUAL="${SOURCE_REPO}"
+
+          echo "Expected sender: $EXPECTED"
+          echo "Actual sender:   $ACTUAL"
+
+          if [ "$ACTUAL" != "$EXPECTED" ]; then
+            echo "Unexpected sender repo: $ACTUAL"
+            exit 1
+          fi
+
+      - name: Checkout automation repo
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: maven
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Appium
+        run: |
+          npm install -g appium
+          appium driver install uiautomator2
+          appium -v
+
+      - name: Start Appium server
+        run: |
+          nohup appium --address 127.0.0.1 --port ${APPIUM_PORT} > appium.log 2>&1 &
+          echo $! > appium.pid
+          sleep 10
+          cat appium.log
+
+      - name: Run Android emulator and execute tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          target: google_apis
+          arch: x86_64
+          profile: pixel_6
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
+          disable-animations: true
+          script: |
+            adb devices
+            adb shell settings put global window_animation_scale 0
+            adb shell settings put global transition_animation_scale 0
+            adb shell settings put global animator_duration_scale 0
+
+            echo "Running tests against: ${BASE_URL}"
+
+            mvn -B clean test \
+              -Dcucumber.filter.tags="@ui and @cicd" \
+              -DbaseUrl="${BASE_URL}" \
+              -DplatformName=Android \
+              -DbrowserName=Chrome \
+              -DdeviceName=emulator-5554 \
+              -Dappium.server.url="http://127.0.0.1:${APPIUM_PORT}"
+
+      - name: Upload test artifacts
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: mobile-test-artifacts
+          path: |
+            appium.log
+            **/target/surefire-reports/**
+            **/target/cucumber-reports/**
+            **/target/allure-results/**
+            allure-results/**
+            logs/**
