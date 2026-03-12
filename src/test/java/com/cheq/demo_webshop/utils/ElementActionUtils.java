@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.interactions.PointerInput;
 import org.openqa.selenium.interactions.Sequence;
+import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
 import java.util.Arrays;
@@ -56,6 +57,7 @@ public class ElementActionUtils {
 	public void enterText(By locator, String text) {
 		try {
 			WebElement element = wait.waitForElementVisible(locator, visibilityTimeout);
+			element.clear();
 			element.sendKeys(text);
 			logger.info("Entered text in element: " + locator.toString() + " - Text: " + text);
 			
@@ -92,6 +94,29 @@ public class ElementActionUtils {
 			logger.error("Failed to get text or compare: " + locator.toString());
 			throw e;
 		}
+	}
+	
+	public void selectDropdown(By locator, String text) {
+		try {
+			WebElement element = wait.waitForElementVisible(locator, visibilityTimeout);
+			
+		    Select select = new Select(element);
+		    select.selectByValue(text);
+			logger.info("Select in the dropdown: " + locator.toString() + " - Text: " + text);
+		} catch (Exception e) {
+			logger.error("Failed to enter text in element: " + locator.toString() + " - Text: " + text);
+			throw e;
+		}
+	}
+	
+	public WebElement findElement(By locator) {
+        try {
+            WebElement element = wait.waitForElementVisible(locator, visibilityTimeout);
+            return element;
+        } catch (Exception e) {
+			logger.error("Failed to find on element: " + locator.toString());
+			throw e;
+        }
 	}
 
 	public void swipe(String direction, int times) {

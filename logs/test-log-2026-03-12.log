@@ -1,0 +1,187 @@
+2026-03-12 16:27:15 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Login
+2026-03-12 16:28:15 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Login
+2026-03-12 16:28:35 [main] ERROR com.cheq.demo_webshop.utils.ElementActionUtils - Failed to click on element: By.xpath: //a[text()='Log in']
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //a[text()='Log in'] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Log in']"}.
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\JunnelLMiguel\ecli..., appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\JunnelLMiguel\ecli..., deviceName: emulator-5554, platformName: ANDROID, platformVersion: 15}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: d3131f41-f442-4ca7-a79b-a3398bff43f9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
+	at com.cheq.demo_webshop.utils.WaitUtil.waitForElementClickable(WaitUtil.java:55)
+	at com.cheq.demo_webshop.utils.ElementActionUtils.tap(ElementActionUtils.java:33)
+	at com.cheq.demo_webshop.pages.components.HeaderComponent.clickLoginLink(HeaderComponent.java:27)
+	at com.cheq.demo_webshop.stepdefinitions.ui.LoginSteps.user_navigate_to_webshop_login_page(LoginSteps.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:100)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+2026-03-12 16:28:35 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: step with uuid 804ecf40-219c-45d9-ade9-8efabf734443 not found
+2026-03-12 16:28:37 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Login
+2026-03-12 16:28:48 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-12 16:28:49 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-12 16:28:49 [main] ERROR com.cheq.demo_webshop.utils.ElementActionUtils - Element is not displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
+2026-03-12 16:28:49 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
+2026-03-12 16:28:49 [main] ERROR com.cheq.demo_webshop.utils.ElementActionUtils - Failed to enter text in element: By.xpath: //input[@id='a'] - Text: 2.0
+2026-03-12 16:28:49 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
+2026-03-12 16:28:49 [main] ERROR com.cheq.demo_webshop.utils.ElementActionUtils - Failed to enter text in element: By.xpath: //input[@id='a'] - Text: 10.0
+2026-03-12 16:28:49 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
+2026-03-12 16:28:49 [main] ERROR com.cheq.demo_webshop.utils.ElementActionUtils - Failed to enter text in element: By.xpath: //input[@id='a'] - Text: 7.0
+2026-03-12 16:28:49 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
+2026-03-12 16:28:49 [main] ERROR com.cheq.demo_webshop.utils.ElementActionUtils - Failed to enter text in element: By.xpath: //input[@id='a'] - Text: 10.0
+2026-03-12 16:33:35 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-12 16:33:37 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-12 16:33:37 [main] ERROR com.cheq.demo_webshop.utils.ElementActionUtils - Element is not displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
+2026-03-12 16:33:37 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
+2026-03-12 16:33:37 [main] ERROR com.cheq.demo_webshop.utils.ElementActionUtils - Failed to enter text in element: By.xpath: //input[@id='a'] - Text: 2.0
+2026-03-12 16:33:37 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
+2026-03-12 16:33:37 [main] ERROR com.cheq.demo_webshop.utils.ElementActionUtils - Failed to enter text in element: By.xpath: //input[@id='a'] - Text: 10.0
+2026-03-12 16:33:37 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
+2026-03-12 16:33:37 [main] ERROR com.cheq.demo_webshop.utils.ElementActionUtils - Failed to enter text in element: By.xpath: //input[@id='a'] - Text: 7.0
+2026-03-12 16:33:37 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
+2026-03-12 16:33:37 [main] ERROR com.cheq.demo_webshop.utils.ElementActionUtils - Failed to enter text in element: By.xpath: //input[@id='a'] - Text: 10.0
+2026-03-12 16:52:38 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-12 16:53:18 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Site returns HTTP 200 on GET /
+2026-03-12 16:53:25 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Site returns HTTP 200 on GET /
+2026-03-12 16:53:25 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-12 16:53:39 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Calculator elements should be visible
+2026-03-12 16:53:39 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
+2026-03-12 16:53:40 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='a']
+2026-03-12 16:53:40 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='b']
+2026-03-12 16:53:40 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //select[@id='op']
+2026-03-12 16:53:41 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //button[@id='compute']
+2026-03-12 16:53:41 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //div[@id='result']
+2026-03-12 16:53:42 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Calculator elements should be visible
+2026-03-12 16:53:42 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
+2026-03-12 16:53:56 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (add)
+2026-03-12 16:53:57 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 2.0
+2026-03-12 16:53:57 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 3.0
+2026-03-12 16:53:59 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: add
+2026-03-12 16:54:00 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-12 16:54:02 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: step with uuid 3aa5fc7d-48a8-4d1a-8ac5-0a690830ac46 not found
+2026-03-12 16:54:03 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (add)
+2026-03-12 16:54:03 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
+2026-03-12 16:54:14 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (subtract)
+2026-03-12 16:54:15 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
+2026-03-12 16:54:15 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 4.0
+2026-03-12 16:54:16 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: sub
+2026-03-12 16:54:17 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-12 16:54:18 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: step with uuid 4f573a19-a6e8-4c02-bd0e-5f27a1e3b53b not found
+2026-03-12 16:54:19 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (subtract)
+2026-03-12 16:54:19 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
+2026-03-12 16:54:30 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (multiply)
+2026-03-12 16:54:31 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 7.0
+2026-03-12 16:54:31 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 6.0
+2026-03-12 16:54:32 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: mul
+2026-03-12 16:54:33 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-12 16:54:34 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: step with uuid 0dfc437d-182e-4be9-94ac-8fdbfc04ba38 not found
+2026-03-12 16:54:35 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (multiply)
+2026-03-12 16:54:35 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
+2026-03-12 16:54:46 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (divide)
+2026-03-12 16:54:47 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
+2026-03-12 16:54:47 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 5.0
+2026-03-12 16:54:48 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: div
+2026-03-12 16:54:49 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-12 16:54:50 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: step with uuid 5b02a18a-49cc-40ee-acd4-0c3b40df44ea not found
+2026-03-12 16:54:51 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (divide)
+2026-03-12 17:01:39 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-12 17:02:22 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Site returns HTTP 200 on GET /
+2026-03-12 17:02:33 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Site returns HTTP 200 on GET /
+2026-03-12 17:02:33 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-12 17:03:02 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Calculator elements should be visible
+2026-03-12 17:03:03 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
+2026-03-12 17:03:04 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='a']
+2026-03-12 17:03:05 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='b']
+2026-03-12 17:03:06 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //select[@id='op']
+2026-03-12 17:03:07 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //button[@id='compute']
+2026-03-12 17:03:07 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //div[@id='result']
+2026-03-12 17:03:10 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Calculator elements should be visible
+2026-03-12 17:03:10 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
+2026-03-12 17:03:26 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (add)
+2026-03-12 17:03:27 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 2.0
+2026-03-12 17:03:28 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 3.0
+2026-03-12 17:03:30 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: add
+2026-03-12 17:03:32 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-12 17:03:36 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (add)
+2026-03-12 17:03:36 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
+2026-03-12 17:03:53 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (subtract)
+2026-03-12 17:03:54 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
+2026-03-12 17:03:55 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 4.0
+2026-03-12 17:03:57 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: sub
+2026-03-12 17:04:00 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-12 17:04:03 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (subtract)
+2026-03-12 17:04:03 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
+2026-03-12 17:04:19 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (multiply)
+2026-03-12 17:04:20 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 7.0
+2026-03-12 17:04:22 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 6.0
+2026-03-12 17:04:23 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: mul
+2026-03-12 17:04:25 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-12 17:04:29 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (multiply)
+2026-03-12 17:04:29 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
+2026-03-12 17:04:43 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (divide)
+2026-03-12 17:04:44 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
+2026-03-12 17:04:45 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 5.0
+2026-03-12 17:04:47 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: div
+2026-03-12 17:04:47 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-12 17:04:51 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (divide)

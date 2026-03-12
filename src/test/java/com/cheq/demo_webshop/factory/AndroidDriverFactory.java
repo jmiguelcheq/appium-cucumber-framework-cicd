@@ -32,6 +32,7 @@ public class AndroidDriverFactory {
         String automationName = ConfigReader.get("automationName");
         String browserName = ConfigReader.get("browserName");
         String chromeDriverFilePath = ConfigReader.get("chromedriverPath");
+        String urlPath = ConfigReader.get("urlPath");
         
         UiAutomator2Options options = new UiAutomator2Options();
         
@@ -44,7 +45,7 @@ public class AndroidDriverFactory {
             String chromeDriverPath = new File(chromeDriverFilePath).getAbsolutePath();
             options.setCapability("chromedriverExecutable", chromeDriverPath);
 
-            URL url = URI.create("http://localhost:4723").toURL();
+            URL url = URI.create(urlPath).toURL();
             AndroidDriver driver = new AndroidDriver(url, options);
             
             System.out.println("Appium Driver initialized successfully");

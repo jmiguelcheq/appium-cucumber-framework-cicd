@@ -12,7 +12,7 @@ import io.cucumber.junit.Cucumber;
     plugin = {"pretty", "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm", 
       "com.cheq.demo_webshop.listener.StepListener"},
     monochrome = true,
-    tags="@ui and @login"
+    tags="@ui and @cicd"
 )
 public class TestRunner {
 }
