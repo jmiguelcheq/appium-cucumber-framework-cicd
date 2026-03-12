@@ -8,10 +8,6 @@ import java.net.URL;
 
 import com.cheq.demo_webshop.utils.ConfigReader;
 
-/**
- * Factory class for creating AndroidDriver instances configured
- * for Chrome browser automation using Appium and UiAutomator2.
- */
 public class AndroidDriverFactory {
 
     public static AndroidDriver loadDriver() throws Exception {
@@ -26,6 +22,10 @@ public class AndroidDriverFactory {
         String browserName = System.getProperty("browserName", ConfigReader.get("browserName"));
         String urlPath = System.getProperty("appium.server.url", ConfigReader.get("urlPath"));
 
+        // For CI/Appium auto-download
+        String chromedriverExecutableDir = System.getProperty("chromedriverExecutableDir", "");
+        String chromedriverChromeMappingFile = System.getProperty("chromedriverChromeMappingFile", "");
+
         UiAutomator2Options options = new UiAutomator2Options();
 
         try {
@@ -39,6 +39,14 @@ public class AndroidDriverFactory {
             options.setAutomationName(automationName);
             options.setCapability("browserName", browserName);
 
+            if (!chromedriverExecutableDir.isBlank()) {
+                options.setCapability("chromedriverExecutableDir", chromedriverExecutableDir);
+            }
+
+            if (!chromedriverChromeMappingFile.isBlank()) {
+                options.setCapability("chromedriverChromeMappingFile", chromedriverChromeMappingFile);
+            }
+
             URL url = URI.create(urlPath).toURL();
             AndroidDriver driver = new AndroidDriver(url, options);
 
@@ -48,6 +56,8 @@ public class AndroidDriverFactory {
             System.out.println("platformVersion = " + platformVersion);
             System.out.println("browserName = " + browserName);
             System.out.println("appiumServerUrl = " + urlPath);
+            System.out.println("chromedriverExecutableDir = " + chromedriverExecutableDir);
+            System.out.println("chromedriverChromeMappingFile = " + chromedriverChromeMappingFile);
 
             return driver;
 
