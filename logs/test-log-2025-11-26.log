@@ -1,0 +1,19 @@
+2025-11-26 14:23:39 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Login
+2025-11-26 14:23:47 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //a[text()='Log in']
+2025-11-26 14:23:50 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.id: Email - Text: johndoe99@mail.com
+2025-11-26 14:23:56 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.id: Password - Text: secret123
+2025-11-26 14:24:08 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //input[@value='Log in']
+2025-11-26 14:24:17 [main] ERROR com.cheq.demo_webshop.utils.ElementActionUtils - Element is not displayed: By.cssSelector: .ico-logout
+2025-11-26 14:24:19 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: step with uuid d759f00b-2617-4b4d-9ae2-8d5b5070cc5f not found
+2025-11-26 14:26:00 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Login
+2025-11-26 14:26:02 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: no step running
+2025-11-26 14:26:02 [main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-11-26 14:41:05 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Login
+2025-11-26 14:41:06 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //span[text()='Categories']
+2025-11-26 14:41:09 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //ul[@class='mob-top-menu show']//a[normalize-space(text())='Apparel & Shoes']
+2025-11-26 14:41:22 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //a[text()='Blue and green Sneaker']
+2025-11-26 14:41:25 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //div[@class='add-to-cart-panel']//input[@value='Add to cart']
+2025-11-26 14:41:27 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //span[@class='cart-label']
+2025-11-26 14:41:29 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //input[@name='removefromcart']
+2025-11-26 14:41:31 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //input[contains(@value, 'Update')]
+2025-11-26 14:41:31 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //div[@class='order-summary-content']

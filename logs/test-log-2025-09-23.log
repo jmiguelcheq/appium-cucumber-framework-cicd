@@ -1,0 +1,52 @@
+2025-09-12 13:48:03 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Login
+2025-09-12 13:48:04 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //a[text()='Log in']
+2025-09-12 13:48:04 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='Email'] - Text: fornis@email.com
+2025-09-12 13:48:04 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='Password'] - Text: james123
+2025-09-12 13:48:06 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //input[@value='Log in']
+2025-09-12 13:48:06 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.cssSelector: .ico-logout
+2025-09-12 13:48:07 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.cssSelector: .ico-logout
+2025-09-12 13:48:07 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.cssSelector: .ico-login
+2025-09-23 08:23:51 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Login
+2025-09-23 08:23:55 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //a[text()='Log in']
+2025-09-23 08:23:56 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: no step running
+2025-09-23 08:23:56 [main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-09-23 08:23:57 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='Email'] - Text: fornis@email.com
+2025-09-23 08:23:58 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='Password'] - Text: james123
+2025-09-23 08:24:03 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //input[@value='Log in']
+2025-09-23 08:24:04 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: no step running
+2025-09-23 08:24:04 [main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-09-23 08:24:04 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.cssSelector: .ico-logout
+2025-09-23 08:24:05 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: no step running
+2025-09-23 08:24:05 [main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-09-23 08:24:07 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.cssSelector: .ico-logout
+2025-09-23 08:24:07 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: no step running
+2025-09-23 08:24:07 [main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-09-23 08:24:08 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.cssSelector: .ico-login
+2025-09-23 08:24:08 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: no step running
+2025-09-23 08:24:08 [main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-09-23 08:26:31 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Login
+2025-09-23 08:26:35 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //a[text()='Log in']
+2025-09-23 08:26:36 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: no step running
+2025-09-23 08:26:36 [main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-09-23 08:26:38 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='Email'] - Text: fornis@email.com
+2025-09-23 08:26:39 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='Password'] - Text: james123
+2025-09-23 08:26:42 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //input[@value='Log in']
+2025-09-23 08:26:43 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: no step running
+2025-09-23 08:26:43 [main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-09-23 08:26:43 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.cssSelector: .ico-logout
+2025-09-23 08:26:43 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: no step running
+2025-09-23 08:26:43 [main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-09-23 08:26:46 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.cssSelector: .ico-logout
+2025-09-23 08:26:46 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: no step running
+2025-09-23 08:26:46 [main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-09-23 08:26:47 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.cssSelector: .ico-login
+2025-09-23 08:26:47 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: no step running
+2025-09-23 08:26:47 [main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-09-23 08:29:56 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Login
+2025-09-23 08:29:58 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //a[text()='Log in']
+2025-09-23 08:29:59 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='Email'] - Text: fornis@email.com
+2025-09-23 08:29:59 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='Password'] - Text: james123
+2025-09-23 08:30:02 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //input[@value='Log in']
+2025-09-23 08:30:03 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.cssSelector: .ico-logout
+2025-09-23 08:30:08 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.cssSelector: .ico-logout
+2025-09-23 08:30:08 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.cssSelector: .ico-login

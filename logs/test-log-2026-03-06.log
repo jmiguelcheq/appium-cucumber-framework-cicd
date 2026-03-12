@@ -1,0 +1,16 @@
+2026-03-06 13:53:03 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Login
+2026-03-06 13:53:07 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //a[text()='Log in']
+2026-03-06 13:53:09 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.id: Email - Text: johndoe99@mail.com
+2026-03-06 13:53:10 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.id: Password - Text: secret123
+2026-03-06 13:53:17 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //input[@value='Log in']
+2026-03-06 13:53:19 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.cssSelector: .ico-logout
+2026-03-06 13:53:21 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.cssSelector: .ico-logout
+2026-03-06 13:53:23 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.cssSelector: .ico-login
+2026-03-06 14:03:39 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Login
+2026-03-06 14:03:43 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //a[text()='Log in']
+2026-03-06 14:03:44 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.id: Email - Text: johndoe99@mail.com
+2026-03-06 14:03:44 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.id: Password - Text: secret123
+2026-03-06 14:03:46 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //input[@value='Log in']
+2026-03-06 14:03:47 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.cssSelector: .ico-logout
+2026-03-06 14:03:49 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.cssSelector: .ico-logout
+2026-03-06 14:03:51 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.cssSelector: .ico-login
