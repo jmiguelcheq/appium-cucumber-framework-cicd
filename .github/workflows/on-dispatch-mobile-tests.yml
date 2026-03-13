@@ -119,7 +119,7 @@ jobs:
 
             echo "Running tests against: ${BASE_URL}"
 
-            mvn -B clean test -Dcucumber.filter.tags='@cicd' -DbaseUrl="${BASE_URL}" -DplatformName=Android -DplatformVersion=14 -DbrowserName=Chrome -DdeviceName=emulator-5554 -Dappium.server.url="http://127.0.0.1:${APPIUM_PORT}" -DchromedriverExecutableDir="${RUNNER_TEMP}/chromedrivers" -DchromedriverChromeMappingFile="${RUNNER_TEMP}/chromedriver-mapping.json"
+            mvn -B clean test -Dcucumber.filter.tags='@ui and @cicd and @cicdsample' -DbaseUrl="${BASE_URL}" -DplatformName=Android -DplatformVersion=14 -DbrowserName=Chrome -DdeviceName=emulator-5554 -Dappium.server.url="http://127.0.0.1:${APPIUM_PORT}" -DchromedriverExecutableDir="${RUNNER_TEMP}/chromedrivers" -DchromedriverChromeMappingFile="${RUNNER_TEMP}/chromedriver-mapping.json"
 
       # ---------- Reports & artifacts ----------
       - name: Upload raw test reports (Surefire/Cucumber/Allure results)
