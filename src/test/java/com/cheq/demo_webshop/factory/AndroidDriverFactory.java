@@ -3,6 +3,7 @@ package com.cheq.demo_webshop.factory;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 
+import java.io.File;
 import java.net.URI;
 import java.net.URL;
 
@@ -22,7 +23,7 @@ public class AndroidDriverFactory {
         String browserName = System.getProperty("browserName", ConfigReader.get("browserName"));
         String urlPath = System.getProperty("appium.server.url", ConfigReader.get("urlPath"));
 
-        // For CI/Appium auto-download
+        String chromeDriverFilePath = System.getProperty("chromedriverPath", ConfigReader.get("chromedriverPath"));
         String chromedriverExecutableDir = System.getProperty("chromedriverExecutableDir", "");
         String chromedriverChromeMappingFile = System.getProperty("chromedriverChromeMappingFile", "");
 
@@ -39,16 +40,30 @@ public class AndroidDriverFactory {
             options.setAutomationName(automationName);
             options.setCapability("browserName", browserName);
 
-            if (!chromedriverExecutableDir.isBlank()) {
-                options.setCapability("chromedriverExecutableDir", chromedriverExecutableDir);
-            }
-
-            if (!chromedriverChromeMappingFile.isBlank()) {
-                options.setCapability("chromedriverChromeMappingFile", chromedriverChromeMappingFile);
-            }
-            
             options.setCapability("showChromedriverLog", true);
             options.setCapability("nativeWebScreenshot", true);
+
+            // Priority 1: explicit local chromedriver path
+            if (chromeDriverFilePath != null && !chromeDriverFilePath.isBlank()) {
+                File chromeDriverFile = new File(chromeDriverFilePath);
+                if (chromeDriverFile.exists()) {
+                    options.setCapability("chromedriverExecutable", chromeDriverFile.getAbsolutePath());
+                    System.out.println("Using local chromedriverExecutable = " + chromeDriverFile.getAbsolutePath());
+                } else {
+                    System.out.println("Configured chromedriverPath not found: " + chromeDriverFile.getAbsolutePath());
+                }
+            }
+
+            // Priority 2: CI / autodownload directory
+            if (chromedriverExecutableDir != null && !chromedriverExecutableDir.isBlank()) {
+                options.setCapability("chromedriverExecutableDir", chromedriverExecutableDir);
+                System.out.println("Using chromedriverExecutableDir = " + chromedriverExecutableDir);
+            }
+
+            if (chromedriverChromeMappingFile != null && !chromedriverChromeMappingFile.isBlank()) {
+                options.setCapability("chromedriverChromeMappingFile", chromedriverChromeMappingFile);
+                System.out.println("Using chromedriverChromeMappingFile = " + chromedriverChromeMappingFile);
+            }
 
             URL url = URI.create(urlPath).toURL();
             AndroidDriver driver = new AndroidDriver(url, options);
@@ -59,8 +74,6 @@ public class AndroidDriverFactory {
             System.out.println("platformVersion = " + platformVersion);
             System.out.println("browserName = " + browserName);
             System.out.println("appiumServerUrl = " + urlPath);
-            System.out.println("chromedriverExecutableDir = " + chromedriverExecutableDir);
-            System.out.println("chromedriverChromeMappingFile = " + chromedriverChromeMappingFile);
 
             return driver;
 
