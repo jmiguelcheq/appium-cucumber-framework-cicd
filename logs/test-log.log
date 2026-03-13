@@ -106,3 +106,142 @@
 2026-03-13 09:35:54 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: div
 2026-03-13 09:35:55 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
 2026-03-13 09:36:01 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (divide)
+2026-03-13 10:09:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can be added successfully via API
+2026-03-13 10:09:50 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: User can be added successfully via API
+2026-03-13 10:09:51 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
+2026-03-13 10:09:51 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users
+2026-03-13 10:09:51 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.AddUserRequest@7412a438
+2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 201
+2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b371ef19c156001532c7b9",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert1505d3a5@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzNzFlZjE5YzE1NjAwMTUzMmM3YjkiLCJpYXQiOjE3NzMzNjc3OTF9.HMzJNqA9G3NjliL9iro3gr0IqKqpW57hKShTB3GyfUs"
+}
+2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: User can be added successfully via API
+2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can log in successfully via API
+2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: User can log in successfully via API
+2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
+2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users
+2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.AddUserRequest@14be750c
+2026-03-13 10:09:55 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 201
+2026-03-13 10:09:55 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b371f119c156001532c7bb",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robertec13d715@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzNzFmMTE5YzE1NjAwMTUzMmM3YmIiLCJpYXQiOjE3NzMzNjc3OTN9.uF4XThXlqjbeyLPCuudAYqFls7RlNaMuygZ9VY5L69c"
+}
+2026-03-13 10:09:55 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
+2026-03-13 10:09:55 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users/login
+2026-03-13 10:09:55 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.LoginUserRequest@7548e1fb
+2026-03-13 10:09:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 200
+2026-03-13 10:09:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b371f119c156001532c7bb",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robertec13d715@fake.com",
+        "__v": 2
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzNzFmMTE5YzE1NjAwMTUzMmM3YmIiLCJpYXQiOjE3NzMzNjc3OTR9.EGtTLR7p5U6W4LB1L7qAxPO1MKO7ZMsKxS9ZDUNRMeg"
+}
+2026-03-13 10:09:56 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: User can log in successfully via API
+2026-03-13 10:09:56 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-13 10:09:56 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: Site returns HTTP 200 on GET /
+2026-03-13 10:09:57 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: Site returns HTTP 200 on GET /
+2026-03-13 10:17:53 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can be added successfully via API
+2026-03-13 10:17:53 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: User can be added successfully via API
+2026-03-13 10:17:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
+2026-03-13 10:17:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users
+2026-03-13 10:17:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.AddUserRequest@6ac4c3f7
+2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 201
+2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b373d219c156001532c7c0",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert258a6275@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzNzNkMjE5YzE1NjAwMTUzMmM3YzAiLCJpYXQiOjE3NzMzNjgyNzR9.nPWNnK4kPu_H-GROj3N71ebPBcmsxZmJOcgXfA7FVwc"
+}
+2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: User can be added successfully via API
+2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can log in successfully via API
+2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: User can log in successfully via API
+2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
+2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users
+2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.AddUserRequest@14be750c
+2026-03-13 10:17:57 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 201
+2026-03-13 10:17:57 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b373d319c156001532c7c2",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert491dd48b@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzNzNkMzE5YzE1NjAwMTUzMmM3YzIiLCJpYXQiOjE3NzMzNjgyNzV9.Df85SNSeXWNUxHOHne40F_hERPG_6Fl0f2zdK6rzSBQ"
+}
+2026-03-13 10:17:57 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
+2026-03-13 10:17:57 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users/login
+2026-03-13 10:17:57 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.LoginUserRequest@7548e1fb
+2026-03-13 10:17:58 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 200
+2026-03-13 10:17:58 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b373d319c156001532c7c2",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert491dd48b@fake.com",
+        "__v": 2
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzNzNkMzE5YzE1NjAwMTUzMmM3YzIiLCJpYXQiOjE3NzMzNjgyNzd9.FOGaGaFhigdU9W4iGzumVNmMCDkjcT4ty6zeiMSj6Co"
+}
+2026-03-13 10:17:58 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: User can log in successfully via API
+2026-03-13 10:17:58 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-13 10:17:58 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: Site returns HTTP 200 on GET /
+2026-03-13 10:17:59 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: Site returns HTTP 200 on GET /
+2026-03-13 10:18:16 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-13 10:19:02 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Calculator elements should be visible
+2026-03-13 10:19:03 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
+2026-03-13 10:19:08 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='a']
+2026-03-13 10:19:08 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='b']
+2026-03-13 10:19:09 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //select[@id='op']
+2026-03-13 10:19:09 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //button[@id='compute']
+2026-03-13 10:19:09 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //div[@id='result']
+2026-03-13 10:19:12 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Calculator elements should be visible
+2026-03-13 10:19:12 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
+2026-03-13 10:19:33 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (add)
+2026-03-13 10:19:35 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 2.0
+2026-03-13 10:19:38 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 3.0
+2026-03-13 10:19:40 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: add
+2026-03-13 10:19:42 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 10:19:46 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (add)
+2026-03-13 10:19:46 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
+2026-03-13 10:20:13 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (subtract)
+2026-03-13 10:20:19 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
+2026-03-13 10:20:22 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 4.0
+2026-03-13 10:20:28 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: sub
+2026-03-13 10:20:28 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 10:20:33 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (subtract)
+2026-03-13 10:20:33 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
+2026-03-13 10:21:00 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (multiply)
+2026-03-13 10:21:01 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 7.0
+2026-03-13 10:21:06 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 6.0
+2026-03-13 10:21:09 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: mul
+2026-03-13 10:21:11 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 10:21:14 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (multiply)
+2026-03-13 10:21:14 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
+2026-03-13 10:21:31 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (divide)
+2026-03-13 10:21:33 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
+2026-03-13 10:21:34 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 5.0
+2026-03-13 10:21:39 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: div
+2026-03-13 10:21:40 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 10:21:43 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (divide)

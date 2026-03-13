@@ -39,12 +39,23 @@ public class AndroidDriverFactory {
 
             options.setAutomationName(automationName);
             options.setCapability("browserName", browserName);
-
             options.setCapability("showChromedriverLog", true);
             options.setCapability("nativeWebScreenshot", true);
 
-            // Priority 1: explicit local chromedriver path
-            if (chromeDriverFilePath != null && !chromeDriverFilePath.isBlank()) {
+            // CI mode: use Appium auto-download / managed chromedrivers
+            if (chromedriverExecutableDir != null && !chromedriverExecutableDir.isBlank()) {
+                options.setCapability("chromedriverExecutableDir", chromedriverExecutableDir);
+                System.out.println("Using chromedriverExecutableDir = " + chromedriverExecutableDir);
+
+                if (chromedriverChromeMappingFile != null && !chromedriverChromeMappingFile.isBlank()) {
+                    options.setCapability("chromedriverChromeMappingFile", chromedriverChromeMappingFile);
+                    System.out.println("Using chromedriverChromeMappingFile = " + chromedriverChromeMappingFile);
+                }
+
+                System.out.println("CI/Appium-managed Chromedriver mode enabled. Skipping local chromedriverExecutable.");
+            } 
+            // Local mode: use explicit local chromedriver if available
+            else if (chromeDriverFilePath != null && !chromeDriverFilePath.isBlank()) {
                 File chromeDriverFile = new File(chromeDriverFilePath);
                 if (chromeDriverFile.exists()) {
                     options.setCapability("chromedriverExecutable", chromeDriverFile.getAbsolutePath());
@@ -52,17 +63,6 @@ public class AndroidDriverFactory {
                 } else {
                     System.out.println("Configured chromedriverPath not found: " + chromeDriverFile.getAbsolutePath());
                 }
-            }
-
-            // Priority 2: CI / autodownload directory
-            if (chromedriverExecutableDir != null && !chromedriverExecutableDir.isBlank()) {
-                options.setCapability("chromedriverExecutableDir", chromedriverExecutableDir);
-                System.out.println("Using chromedriverExecutableDir = " + chromedriverExecutableDir);
-            }
-
-            if (chromedriverChromeMappingFile != null && !chromedriverChromeMappingFile.isBlank()) {
-                options.setCapability("chromedriverChromeMappingFile", chromedriverChromeMappingFile);
-                System.out.println("Using chromedriverChromeMappingFile = " + chromedriverChromeMappingFile);
             }
 
             URL url = URI.create(urlPath).toURL();
