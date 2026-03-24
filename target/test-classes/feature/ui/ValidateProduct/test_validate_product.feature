@@ -1,4 +1,4 @@
-@ui @dropdowntest
+@dropdowntest
 Feature: Login Functionality
 
   Scenario: Login

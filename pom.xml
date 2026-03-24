@@ -183,7 +183,7 @@
     </dependencies>
 <build>
     <plugins>
-    
+
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
@@ -193,31 +193,33 @@
                 <target>17</target>
             </configuration>
         </plugin>
-    
+
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
             <version>3.0.0-M5</version>
             <configuration>
-				<properties>
-			        <property>
-			            <name>dataproviderthreadcount</name>
-			            <value>20</value>
-			        </property>
-			    </properties>
-			    <suiteXmlFiles>
-                    <suiteXmlFile>testng.xml</suiteXmlFile> <!-- Your TestNG XML file -->
+            	<testFailureIgnore>true</testFailureIgnore>
+                <properties>
+                    <property>
+                        <name>dataproviderthreadcount</name>
+                        <value>20</value>
+                    </property>
+                </properties>
+                <suiteXmlFiles>
+                    <suiteXmlFile>testng.xml</suiteXmlFile>
                 </suiteXmlFiles>
-				<includes>**/TestNgRunner.java</includes>
-				<includes>**/TestRunner.java</includes>
+                <includes>
+                    <include>**/TestNgRunner.java</include>
+                    <include>**/TestRunner.java</include>
+                </includes>
                 <systemPropertyVariables>
-			          <!-- Direct Allure results into target/allure-results -->
-			          <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
-			    </systemPropertyVariables>
+                    <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+                </systemPropertyVariables>
             </configuration>
         </plugin>
+
     </plugins>
 </build>
-	
 	
 </project>

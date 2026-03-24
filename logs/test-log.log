@@ -1,247 +1,725 @@
-2026-03-13 04:16:24 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
-2026-03-13 04:16:24 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
-2026-03-13 04:16:24 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
-2026-03-13 04:16:24 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
-2026-03-13 04:16:24 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
-2026-03-13 04:16:24 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
-2026-03-13 04:18:47 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
-2026-03-13 04:19:18 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Site returns HTTP 200 on GET /
-2026-03-13 04:19:24 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Site returns HTTP 200 on GET /
-2026-03-13 04:19:24 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
-2026-03-13 04:19:37 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Calculator elements should be visible
-2026-03-13 04:19:37 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
-2026-03-13 04:19:38 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='a']
-2026-03-13 04:19:38 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='b']
-2026-03-13 04:19:38 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //select[@id='op']
-2026-03-13 04:19:38 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //button[@id='compute']
-2026-03-13 04:19:38 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //div[@id='result']
-2026-03-13 04:19:40 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Calculator elements should be visible
-2026-03-13 04:19:40 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
-2026-03-13 04:19:49 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (add)
-2026-03-13 04:19:49 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 2.0
-2026-03-13 04:19:50 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 3.0
-2026-03-13 04:19:51 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: add
-2026-03-13 04:19:52 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
-2026-03-13 04:19:55 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (add)
-2026-03-13 04:19:55 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
-2026-03-13 04:20:03 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (subtract)
-2026-03-13 04:20:04 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
-2026-03-13 04:20:05 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 4.0
-2026-03-13 04:20:06 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: sub
-2026-03-13 04:20:07 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
-2026-03-13 04:20:09 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (subtract)
-2026-03-13 04:20:09 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
-2026-03-13 04:20:17 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (multiply)
-2026-03-13 04:20:18 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 7.0
-2026-03-13 04:20:18 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 6.0
-2026-03-13 04:20:19 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: mul
-2026-03-13 04:20:20 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
-2026-03-13 04:20:22 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (multiply)
-2026-03-13 04:20:22 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
-2026-03-13 04:20:31 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (divide)
-2026-03-13 04:20:32 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
-2026-03-13 04:20:33 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 5.0
-2026-03-13 04:20:35 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: div
-2026-03-13 04:20:35 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
-2026-03-13 04:20:37 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (divide)
-2026-03-13 08:51:07 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
-2026-03-13 08:51:07 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: Site returns HTTP 200 on GET /
-2026-03-13 08:51:17 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: Site returns HTTP 200 on GET /
-2026-03-13 08:51:17 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
-2026-03-13 08:52:11 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
-2026-03-13 08:52:18 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
-2026-03-13 08:52:24 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
-2026-03-13 08:52:28 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
-2026-03-13 08:52:56 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
-2026-03-13 08:53:01 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
-2026-03-13 08:53:06 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
-2026-03-13 08:53:12 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
-2026-03-13 08:53:21 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
-2026-03-13 08:53:28 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
-2026-03-13 08:58:17 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
-2026-03-13 08:58:30 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
-2026-03-13 08:58:37 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
-2026-03-13 08:58:44 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
-2026-03-13 08:58:52 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
-2026-03-13 08:58:59 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
-2026-03-13 08:59:43 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
-2026-03-13 08:59:52 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
-2026-03-13 08:59:56 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
-2026-03-13 09:00:00 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
-2026-03-13 09:00:07 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
-2026-03-13 09:32:07 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
-2026-03-13 09:33:05 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Calculator elements should be visible
-2026-03-13 09:33:06 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
-2026-03-13 09:33:12 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='a']
-2026-03-13 09:33:13 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='b']
-2026-03-13 09:33:13 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //select[@id='op']
-2026-03-13 09:33:14 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //button[@id='compute']
-2026-03-13 09:33:15 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //div[@id='result']
-2026-03-13 09:33:19 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Calculator elements should be visible
-2026-03-13 09:33:19 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
-2026-03-13 09:33:51 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (add)
-2026-03-13 09:33:56 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 2.0
-2026-03-13 09:33:59 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 3.0
-2026-03-13 09:34:03 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: add
-2026-03-13 09:34:05 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
-2026-03-13 09:34:10 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (add)
-2026-03-13 09:34:10 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
-2026-03-13 09:34:33 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (subtract)
-2026-03-13 09:34:39 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
-2026-03-13 09:34:41 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 4.0
-2026-03-13 09:34:45 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: sub
-2026-03-13 09:34:46 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
-2026-03-13 09:34:50 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (subtract)
-2026-03-13 09:34:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
-2026-03-13 09:35:11 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (multiply)
-2026-03-13 09:35:13 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 7.0
-2026-03-13 09:35:16 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 6.0
-2026-03-13 09:35:20 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: mul
-2026-03-13 09:35:22 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
-2026-03-13 09:35:27 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (multiply)
-2026-03-13 09:35:27 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
-2026-03-13 09:35:45 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (divide)
-2026-03-13 09:35:47 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
-2026-03-13 09:35:49 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 5.0
-2026-03-13 09:35:54 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: div
-2026-03-13 09:35:55 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
-2026-03-13 09:36:01 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (divide)
-2026-03-13 10:09:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can be added successfully via API
-2026-03-13 10:09:50 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: User can be added successfully via API
-2026-03-13 10:09:51 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
-2026-03-13 10:09:51 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users
-2026-03-13 10:09:51 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.AddUserRequest@7412a438
-2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 201
-2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
+2026-03-23 10:36:11 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:36:11 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 10:36:11 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Execution mode set to NATIVE_APP for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:36:11 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Initializing Appium driver in NATIVE_APP mode
+2026-03-23 10:36:11 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appPackage = com.Advantage.aShopping
+2026-03-23 10:36:11 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appActivity = com.Advantage.aShopping.ActivityMaster
+2026-03-23 10:36:11 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - noReset = true
+2026-03-23 10:36:17 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:36:17 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 10:36:17 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Execution mode set to NATIVE_APP for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:36:17 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Initializing Appium driver in NATIVE_APP mode
+2026-03-23 10:36:17 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appPackage = com.Advantage.aShopping
+2026-03-23 10:36:17 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appActivity = com.Advantage.aShopping.ActivityMaster
+2026-03-23 10:36:17 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - noReset = true
+2026-03-23 10:36:41 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Appium Driver initialized successfully
+2026-03-23 10:36:41 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformName = Android
+2026-03-23 10:36:41 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - deviceName = emulator-5554
+2026-03-23 10:36:41 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformVersion = 15
+2026-03-23 10:36:41 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - automationName = UIAutomator2
+2026-03-23 10:36:41 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appiumServerUrl = http://localhost:4723
+2026-03-23 10:36:41 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - executionMode = NATIVE_APP
+2026-03-23 10:36:41 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:36:41 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Current application set to NATIVE_APP
+2026-03-23 10:36:41 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Verify switching from mobile web to native app with UI validation with ExecutionType=UI
+2026-03-23 10:36:42 [main] WARN  com.cheq.demo_webshop.utils.common.AllureUtil - Skipping screenshot capture: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [087a6467-dbcf-41ef-a854-d684bdb05521, screenshot {}]
+Capabilities {appium:appActivity: com.Advantage.aShopping.Act..., appium:appPackage: com.Advantage.aShopping, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.Advantage.aShopping.Act..., appPackage: com.Advantage.aShopping, automationName: UIAutomator2, deviceName: emulator-5554, noReset: true, platformName: ANDROID, platformVersion: 15}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 087a6467-dbcf-41ef-a854-d684bdb05521
+2026-03-23 10:36:42 [main] WARN  com.cheq.demo_webshop.utils.common.AllureUtil - Skipping screenshot capture: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [087a6467-dbcf-41ef-a854-d684bdb05521, screenshot {}]
+Capabilities {appium:appActivity: com.Advantage.aShopping.Act..., appium:appPackage: com.Advantage.aShopping, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.Advantage.aShopping.Act..., appPackage: com.Advantage.aShopping, automationName: UIAutomator2, deviceName: emulator-5554, noReset: true, platformName: ANDROID, platformVersion: 15}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 087a6467-dbcf-41ef-a854-d684bdb05521
+2026-03-23 10:36:42 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:36:42 [main] ERROR com.cheq.demo_webshop.factory.AndroidDriverFactory - Error initializing the Appium driver
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The instrumentation process cannot be initialized. Make sure the application under test does not crash and investigate the logcat output. 
+Host info: host: 'CHEQ-LAP-0325', ip: '192.168.254.125'
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:appActivity: com.Advantage.aShopping.Act..., appium:appPackage: com.Advantage.aShopping, appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 15, platformName: ANDROID}]}]
+Capabilities {appium:appActivity: com.Advantage.aShopping.Act..., appium:appPackage: com.Advantage.aShopping, appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 15, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:178)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:308)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:211)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:197)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:98)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:109)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:108)
+	at com.cheq.demo_webshop.factory.AndroidDriverFactory.loadDriver(AndroidDriverFactory.java:95)
+	at com.cheq.demo_webshop.hooks.Hooks.setUpUi(Hooks.java:71)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:47)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:107)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:107)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:235)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+	at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:89)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:200)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1685)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:90)
+	at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:78)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
+	at io.cucumber.core.runtime.Runtime.run(Runtime.java:78)
+	at io.cucumber.core.cli.Main.run(Main.java:87)
+	at io.cucumber.core.cli.Main.main(Main.java:30)
+2026-03-23 10:36:42 [main] WARN  com.cheq.demo_webshop.hooks.Hooks - Current application was not initialized when writing Allure environment
+2026-03-23 10:36:42 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Verify switching from mobile web to native app with UI validation with ExecutionType=UI
+2026-03-23 10:37:00 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:37:00 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 10:37:00 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Execution mode set to NATIVE_APP for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:37:00 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Initializing Appium driver in NATIVE_APP mode
+2026-03-23 10:37:00 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appPackage = com.Advantage.aShopping
+2026-03-23 10:37:00 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appActivity = com.Advantage.aShopping.ActivityMaster
+2026-03-23 10:37:00 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - noReset = true
+2026-03-23 10:37:07 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Appium Driver initialized successfully
+2026-03-23 10:37:07 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformName = Android
+2026-03-23 10:37:07 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - deviceName = emulator-5554
+2026-03-23 10:37:07 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformVersion = 15
+2026-03-23 10:37:07 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - automationName = UIAutomator2
+2026-03-23 10:37:07 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appiumServerUrl = http://localhost:4723
+2026-03-23 10:37:07 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - executionMode = NATIVE_APP
+2026-03-23 10:37:07 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:37:07 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Current application set to NATIVE_APP
+2026-03-23 10:37:07 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Verify switching from mobile web to native app with UI validation with ExecutionType=UI
+2026-03-23 10:37:16 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: step with uuid 000bc309-6da0-49c5-9805-a79d503fa63e not found
+2026-03-23 10:37:17 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:40:54 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:40:54 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 10:40:54 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Execution mode set to MOBILE_WEB for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:40:54 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-23 10:40:54 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-23 10:40:54 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Initializing Appium driver in MOBILE_WEB mode
+2026-03-23 10:40:54 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - browserName = Chrome
+2026-03-23 10:40:54 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - chromedriverAutodownload = true
+2026-03-23 10:41:12 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Appium Driver initialized successfully
+2026-03-23 10:41:12 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformName = Android
+2026-03-23 10:41:12 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - deviceName = emulator-5554
+2026-03-23 10:41:12 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformVersion = 15
+2026-03-23 10:41:12 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - automationName = UIAutomator2
+2026-03-23 10:41:12 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appiumServerUrl = http://localhost:4723
+2026-03-23 10:41:12 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - executionMode = MOBILE_WEB
+2026-03-23 10:41:15 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:41:15 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Current application set to CHROME
+2026-03-23 10:41:15 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Verify switching from mobile web to native app with UI validation with ExecutionType=UI
+2026-03-23 10:41:19 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: step with uuid d5f20cd0-bba7-4ecd-86f1-59ffd824c7d8 not found
+2026-03-23 10:41:20 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:42:47 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:42:47 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 10:42:47 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Execution mode set to MOBILE_WEB for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:42:47 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-23 10:42:47 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-23 10:42:47 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Initializing Appium driver in MOBILE_WEB mode
+2026-03-23 10:42:47 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - browserName = Chrome
+2026-03-23 10:42:47 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - chromedriverAutodownload = true
+2026-03-23 10:42:58 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Appium Driver initialized successfully
+2026-03-23 10:42:58 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformName = Android
+2026-03-23 10:42:58 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - deviceName = emulator-5554
+2026-03-23 10:42:58 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformVersion = 15
+2026-03-23 10:42:58 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - automationName = UIAutomator2
+2026-03-23 10:42:58 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appiumServerUrl = http://localhost:4723
+2026-03-23 10:42:58 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - executionMode = MOBILE_WEB
+2026-03-23 10:43:03 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:43:03 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Current application set to CHROME
+2026-03-23 10:43:03 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Verify switching from mobile web to native app with UI validation with ExecutionType=UI
+2026-03-23 10:43:05 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: step with uuid bed9b9c0-a445-4f5c-83e2-4e6658d1e971 not found
+2026-03-23 10:43:06 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:47:25 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:47:25 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 10:47:26 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Execution mode set to MOBILE_WEB for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:47:26 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-23 10:47:26 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-23 10:47:26 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Initializing Appium driver in MOBILE_WEB mode
+2026-03-23 10:47:26 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - browserName = Chrome
+2026-03-23 10:47:26 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - chromedriverAutodownload = true
+2026-03-23 10:47:45 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Appium Driver initialized successfully
+2026-03-23 10:47:45 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformName = Android
+2026-03-23 10:47:45 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - deviceName = emulator-5554
+2026-03-23 10:47:45 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformVersion = 15
+2026-03-23 10:47:45 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - automationName = UIAutomator2
+2026-03-23 10:47:45 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appiumServerUrl = http://localhost:4723
+2026-03-23 10:47:45 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - executionMode = MOBILE_WEB
+2026-03-23 10:47:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:47:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Current application set to CHROME
+2026-03-23 10:47:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Verify switching from mobile web to native app with UI validation with ExecutionType=UI
+2026-03-23 10:47:54 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: step with uuid c5d23885-5ce7-4773-a1c2-3559b2f6b56b not found
+2026-03-23 10:47:56 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:52:18 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:52:18 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 10:52:18 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Execution mode set to MOBILE_WEB for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:52:18 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-23 10:52:18 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-23 10:52:18 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Initializing Appium driver in MOBILE_WEB mode
+2026-03-23 10:52:18 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - browserName = Chrome
+2026-03-23 10:52:18 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - chromedriverAutodownload = true
+2026-03-23 10:52:36 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Appium Driver initialized successfully
+2026-03-23 10:52:36 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformName = Android
+2026-03-23 10:52:36 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - deviceName = emulator-5554
+2026-03-23 10:52:36 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformVersion = 15
+2026-03-23 10:52:36 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - automationName = UIAutomator2
+2026-03-23 10:52:36 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appiumServerUrl = http://localhost:4723
+2026-03-23 10:52:36 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - executionMode = MOBILE_WEB
+2026-03-23 10:52:40 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:52:40 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Current application set to CHROME
+2026-03-23 10:52:40 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Verify switching from mobile web to native app with UI validation with ExecutionType=UI
+2026-03-23 10:52:59 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: step with uuid a4f829d3-315d-4782-8b10-9291b9d95492 not found
+2026-03-23 10:53:00 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:53:29 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:53:29 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 10:53:29 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Execution mode set to MOBILE_WEB for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:53:30 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-23 10:53:30 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-23 10:53:30 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Initializing Appium driver in MOBILE_WEB mode
+2026-03-23 10:53:30 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - browserName = Chrome
+2026-03-23 10:53:30 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - chromedriverAutodownload = true
+2026-03-23 10:53:40 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Appium Driver initialized successfully
+2026-03-23 10:53:40 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformName = Android
+2026-03-23 10:53:40 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - deviceName = emulator-5554
+2026-03-23 10:53:40 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformVersion = 15
+2026-03-23 10:53:40 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - automationName = UIAutomator2
+2026-03-23 10:53:40 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appiumServerUrl = http://localhost:4723
+2026-03-23 10:53:40 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - executionMode = MOBILE_WEB
+2026-03-23 10:53:44 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:53:44 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Current application set to CHROME
+2026-03-23 10:53:44 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Verify switching from mobile web to native app with UI validation with ExecutionType=UI
+2026-03-23 10:54:04 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: step with uuid ce064521-4773-47ec-92aa-ba8af99a9ee1 not found
+2026-03-23 10:54:05 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:55:02 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:55:03 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 10:55:03 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Execution mode set to MOBILE_WEB for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:55:03 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-23 10:55:03 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-23 10:55:03 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Initializing Appium driver in MOBILE_WEB mode
+2026-03-23 10:55:03 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - browserName = Chrome
+2026-03-23 10:55:03 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - chromedriverAutodownload = true
+2026-03-23 10:55:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Appium Driver initialized successfully
+2026-03-23 10:55:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformName = Android
+2026-03-23 10:55:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - deviceName = emulator-5554
+2026-03-23 10:55:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformVersion = 15
+2026-03-23 10:55:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - automationName = UIAutomator2
+2026-03-23 10:55:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appiumServerUrl = http://localhost:4723
+2026-03-23 10:55:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - executionMode = MOBILE_WEB
+2026-03-23 10:55:19 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 10:55:19 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Current application set to CHROME
+2026-03-23 10:55:19 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Verify switching from mobile web to native app with UI validation with ExecutionType=UI
+2026-03-23 10:55:27 [main] INFO  com.cheq.demo_webshop.utils.ui.ApplicationSwitchUtil - Switched to native app: com.Advantage.aShopping
+2026-03-23 10:56:10 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: step with uuid 0f4b508e-9ce8-4a8c-8536-68c21c47a603 not found
+2026-03-23 10:56:11 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 11:05:49 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 11:05:49 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 11:05:49 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Execution mode set to MOBILE_WEB for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 11:05:49 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-23 11:05:49 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-23 11:05:49 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Initializing Appium driver in MOBILE_WEB mode
+2026-03-23 11:05:49 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - browserName = Chrome
+2026-03-23 11:05:49 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - chromedriverAutodownload = true
+2026-03-23 11:06:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Appium Driver initialized successfully
+2026-03-23 11:06:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformName = Android
+2026-03-23 11:06:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - deviceName = emulator-5554
+2026-03-23 11:06:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformVersion = 15
+2026-03-23 11:06:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - automationName = UIAutomator2
+2026-03-23 11:06:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appiumServerUrl = http://localhost:4723
+2026-03-23 11:06:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - executionMode = MOBILE_WEB
+2026-03-23 11:06:21 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 11:06:21 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Current application set to CHROME
+2026-03-23 11:06:21 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Verify switching from mobile web to native app with UI validation with ExecutionType=UI
+2026-03-23 11:06:29 [main] INFO  com.cheq.demo_webshop.utils.ui.ApplicationSwitchUtil - Available contexts before switching to native: [NATIVE_APP, CHROMIUM]
+2026-03-23 11:06:29 [main] INFO  com.cheq.demo_webshop.utils.ui.ApplicationSwitchUtil - Switched context to NATIVE_APP
+2026-03-23 11:06:29 [main] INFO  com.cheq.demo_webshop.utils.ui.ApplicationSwitchUtil - Switched to native app: com.Advantage.aShopping
+2026-03-23 11:06:34 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 11:25:45 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 11:25:45 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 11:25:45 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Execution mode set to MOBILE_WEB for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 11:25:45 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-23 11:25:45 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-23 11:25:45 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Initializing Appium driver in MOBILE_WEB mode
+2026-03-23 11:25:45 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - browserName = Chrome
+2026-03-23 11:25:45 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - chromedriverAutodownload = true
+2026-03-23 11:26:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Appium Driver initialized successfully
+2026-03-23 11:26:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformName = Android
+2026-03-23 11:26:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - deviceName = emulator-5554
+2026-03-23 11:26:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformVersion = 15
+2026-03-23 11:26:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - automationName = UIAutomator2
+2026-03-23 11:26:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appiumServerUrl = http://localhost:4723
+2026-03-23 11:26:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - executionMode = MOBILE_WEB
+2026-03-23 11:26:20 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 11:26:20 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Current application set to CHROME
+2026-03-23 11:26:20 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Verify switching from mobile web to native app with UI validation with ExecutionType=UI
+2026-03-23 11:26:27 [main] INFO  com.cheq.demo_webshop.utils.ui.ApplicationSwitchUtil - Available contexts before switching to native: [NATIVE_APP, CHROMIUM]
+2026-03-23 11:26:27 [main] INFO  com.cheq.demo_webshop.utils.ui.ApplicationSwitchUtil - Switched context to NATIVE_APP
+2026-03-23 11:26:27 [main] INFO  com.cheq.demo_webshop.utils.ui.ApplicationSwitchUtil - Switched to native app: com.Advantage.aShopping
+2026-03-23 11:26:35 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - native app terminated successfully: com.Advantage.aShopping
+2026-03-23 11:26:36 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Chrome terminated successfully: com.android.chrome
+2026-03-23 11:26:37 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 13:10:32 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 13:10:32 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 13:10:32 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Execution mode set to NATIVE_APP for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 13:10:32 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Initializing Appium driver in NATIVE_APP mode
+2026-03-23 13:10:32 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appPackage = com.Advantage.aShopping
+2026-03-23 13:10:32 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appActivity = com.Advantage.aShopping.ActivityMaster
+2026-03-23 13:10:32 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - noReset = true
+2026-03-23 13:10:54 [main] ERROR com.cheq.demo_webshop.factory.AndroidDriverFactory - Error initializing the Appium driver
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Cannot start the 'com.Advantage.aShopping' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command ''C:\Users\JunnelLMiguel\AppData\Local\Android\Sdk\platform-tools\adb.exe' -P 5037 -s emulator-5554 shell am start-activity -W -n com.Advantage.aShopping/com.Advantage.aShopping.ActivityMaster -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.Advantage.aShopping/.ActivityMaster } from null (pid=17062, uid=2000) not exported from uid 10213
+	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1170)
+	at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1118)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:782)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1582)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:3348)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:795)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:246)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10471)
+	at android.os.Binder.shellCommand(Binder.java:1230)
+	at android.os.Binder.onTransact(Binder.java:1043)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:5675)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2812)
+	at android.os.Binder.execTransactInternal(Binder.java:1505)
+	at android.os.Binder.execTransact(Binder.java:1444)
+ 
+Host info: host: 'CHEQ-LAP-0325', ip: '192.168.254.125'
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:appActivity: com.Advantage.aShopping.Act..., appium:appPackage: com.Advantage.aShopping, appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 15, platformName: ANDROID}]}]
+Capabilities {appium:appActivity: com.Advantage.aShopping.Act..., appium:appPackage: com.Advantage.aShopping, appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 15, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:178)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:308)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:211)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:197)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:98)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:109)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:108)
+	at com.cheq.demo_webshop.factory.AndroidDriverFactory.loadDriver(AndroidDriverFactory.java:95)
+	at com.cheq.demo_webshop.hooks.Hooks.setUpUi(Hooks.java:78)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:47)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:100)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+2026-03-23 13:10:54 [main] WARN  com.cheq.demo_webshop.hooks.Hooks - Current application was not initialized when writing Allure environment
+2026-03-23 13:10:54 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Verify switching from mobile web to native app with UI validation with ExecutionType=UI
+2026-03-23 13:13:35 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 13:13:35 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 13:13:35 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Execution mode set to NATIVE_APP for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 13:13:35 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Initializing Appium driver in NATIVE_APP mode
+2026-03-23 13:13:35 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appPackage = com.Advantage.aShopping
+2026-03-23 13:13:35 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appActivity = com.Advantage.aShopping.ActivityMaster
+2026-03-23 13:13:35 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - noReset = true
+2026-03-23 13:13:45 [main] ERROR com.cheq.demo_webshop.factory.AndroidDriverFactory - Error initializing the Appium driver
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Cannot start the 'com.Advantage.aShopping' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command ''C:\Users\JunnelLMiguel\AppData\Local\Android\Sdk\platform-tools\adb.exe' -P 5037 -s emulator-5554 shell am start-activity -W -n com.Advantage.aShopping/com.Advantage.aShopping.ActivityMaster -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.Advantage.aShopping/.ActivityMaster } from null (pid=17246, uid=2000) not exported from uid 10213
+	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1170)
+	at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1118)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:782)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1582)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:3348)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:795)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:246)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10471)
+	at android.os.Binder.shellCommand(Binder.java:1230)
+	at android.os.Binder.onTransact(Binder.java:1043)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:5675)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2812)
+	at android.os.Binder.execTransactInternal(Binder.java:1505)
+	at android.os.Binder.execTransact(Binder.java:1444)
+ 
+Host info: host: 'CHEQ-LAP-0325', ip: '192.168.254.125'
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:appActivity: com.Advantage.aShopping.Act..., appium:appPackage: com.Advantage.aShopping, appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 15, platformName: ANDROID}]}]
+Capabilities {appium:appActivity: com.Advantage.aShopping.Act..., appium:appPackage: com.Advantage.aShopping, appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, appium:noReset: true, appium:platformVersion: 15, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:178)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:308)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:211)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:197)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:98)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:109)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:108)
+	at com.cheq.demo_webshop.factory.AndroidDriverFactory.loadDriver(AndroidDriverFactory.java:95)
+	at com.cheq.demo_webshop.hooks.Hooks.setUpUi(Hooks.java:78)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:47)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:100)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+2026-03-23 13:13:45 [main] WARN  com.cheq.demo_webshop.hooks.Hooks - Current application was not initialized when writing Allure environment
+2026-03-23 13:13:45 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Verify switching from mobile web to native app with UI validation with ExecutionType=UI
+2026-03-23 13:16:03 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 13:16:03 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 13:16:03 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Execution mode set to MOBILE_WEB for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 13:16:03 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-23 13:16:03 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-23 13:16:03 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Initializing Appium driver in MOBILE_WEB mode
+2026-03-23 13:16:03 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - browserName = Chrome
+2026-03-23 13:16:03 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - chromedriverAutodownload = true
+2026-03-23 13:16:30 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Appium Driver initialized successfully
+2026-03-23 13:16:30 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformName = Android
+2026-03-23 13:16:30 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - deviceName = emulator-5554
+2026-03-23 13:16:30 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformVersion = 15
+2026-03-23 13:16:30 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - automationName = UIAutomator2
+2026-03-23 13:16:30 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appiumServerUrl = http://localhost:4723
+2026-03-23 13:16:30 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - executionMode = MOBILE_WEB
+2026-03-23 13:16:36 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 13:16:36 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Current application set to CHROME
+2026-03-23 13:16:36 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Verify switching from mobile web to native app with UI validation with ExecutionType=UI
+2026-03-23 13:16:47 [main] INFO  com.cheq.demo_webshop.utils.ui.ApplicationSwitchUtil - Available contexts before switching to native: [NATIVE_APP, CHROMIUM]
+2026-03-23 13:16:47 [main] INFO  com.cheq.demo_webshop.utils.ui.ApplicationSwitchUtil - Switched context to NATIVE_APP
+2026-03-23 13:16:47 [main] INFO  com.cheq.demo_webshop.utils.ui.ApplicationSwitchUtil - Switched to native app: com.Advantage.aShopping
+2026-03-23 13:16:55 [main] WARN  com.cheq.demo_webshop.utils.common.AllureUtil - Skipping screenshot capture: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [0d48c6bf-78f5-4943-a151-7a7c28b7bf8d, screenshot {}]
+Capabilities {appium:automationName: UIAutomator2, appium:chromedriverAutodownload: true, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UIAutomator2, browserName: Chrome, chromedriverAutodownload: true, deviceName: emulator-5554, nativeWebScreenshot: true, platformName: ANDROID, platformVersion: 15, showChromedriverLog: true}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:showChromedriverLog: true, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 0d48c6bf-78f5-4943-a151-7a7c28b7bf8d
+2026-03-23 13:16:55 [main] WARN  com.cheq.demo_webshop.hooks.Hooks - Unable to terminate native app: Error executing adbExec. Original error: 'Command ''C:\Users\JunnelLMiguel\AppData\Local\Android\Sdk\platform-tools\adb.exe' -P 5037 -s emulator-5554 shell dumpsys activity processes' exited with code 1'; Command output: adb.exe: device offline
+
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [0d48c6bf-78f5-4943-a151-7a7c28b7bf8d, executeScript {script=mobile: terminateApp, args=[{appId=com.Advantage.aShopping, bundleId=com.Advantage.aShopping}]}]
+Capabilities {appium:automationName: UIAutomator2, appium:chromedriverAutodownload: true, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UIAutomator2, browserName: Chrome, chromedriverAutodownload: true, deviceName: emulator-5554, nativeWebScreenshot: true, platformName: ANDROID, platformVersion: 15, showChromedriverLog: true}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:showChromedriverLog: true, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 0d48c6bf-78f5-4943-a151-7a7c28b7bf8d
+2026-03-23 13:16:55 [main] WARN  com.cheq.demo_webshop.hooks.Hooks - Unable to terminate Chrome: Error executing adbExec. Original error: 'Command ''C:\Users\JunnelLMiguel\AppData\Local\Android\Sdk\platform-tools\adb.exe' -P 5037 -s emulator-5554 shell dumpsys activity processes' exited with code 1'; Command output: adb.exe: device offline
+
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [0d48c6bf-78f5-4943-a151-7a7c28b7bf8d, executeScript {script=mobile: terminateApp, args=[{appId=com.android.chrome, bundleId=com.android.chrome}]}]
+Capabilities {appium:automationName: UIAutomator2, appium:chromedriverAutodownload: true, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UIAutomator2, browserName: Chrome, chromedriverAutodownload: true, deviceName: emulator-5554, nativeWebScreenshot: true, platformName: ANDROID, platformVersion: 15, showChromedriverLog: true}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:showChromedriverLog: true, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 0d48c6bf-78f5-4943-a151-7a7c28b7bf8d
+2026-03-23 13:16:56 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 13:28:10 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can be added successfully via API
+2026-03-23 13:28:10 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 13:28:10 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can be added successfully via API
+2026-03-23 13:28:10 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: User can be added successfully via API with ExecutionType=API
+2026-03-23 13:28:11 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-23 13:28:11 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-23 13:28:11 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robertff2fae17@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-23 13:28:13 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-23 13:28:13 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
     "user": {
-        "_id": "69b371ef19c156001532c7b9",
+        "_id": "69c0cf6cd486fd00159d18d2",
         "firstName": "Robert",
         "lastName": "Baratheon",
-        "email": "robert1505d3a5@fake.com",
+        "email": "robertff2fae17@fake.com",
         "__v": 1
     },
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzNzFlZjE5YzE1NjAwMTUzMmM3YjkiLCJpYXQiOjE3NzMzNjc3OTF9.HMzJNqA9G3NjliL9iro3gr0IqKqpW57hKShTB3GyfUs"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWMwY2Y2Y2Q0ODZmZDAwMTU5ZDE4ZDIiLCJpYXQiOjE3NzQyNDM2OTJ9.O9SZfeHEspCgAp1DnybrUK6IPfRonOy-nAz6ftdzSUk"
 }
-2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: User can be added successfully via API
-2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can log in successfully via API
-2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: User can log in successfully via API
-2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
-2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users
-2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.AddUserRequest@14be750c
-2026-03-13 10:09:55 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 201
-2026-03-13 10:09:55 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
+2026-03-23 13:28:13 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can be added successfully via API
+2026-03-23 13:28:13 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can log in successfully via API
+2026-03-23 13:28:13 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 13:28:13 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can log in successfully via API
+2026-03-23 13:28:13 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: User can log in successfully via API with ExecutionType=API
+2026-03-23 13:28:13 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-23 13:28:13 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-23 13:28:13 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robertc2753697@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-23 13:28:14 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-23 13:28:14 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
     "user": {
-        "_id": "69b371f119c156001532c7bb",
+        "_id": "69c0cf6dd486fd00159d18d4",
         "firstName": "Robert",
         "lastName": "Baratheon",
-        "email": "robertec13d715@fake.com",
+        "email": "robertc2753697@fake.com",
         "__v": 1
     },
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzNzFmMTE5YzE1NjAwMTUzMmM3YmIiLCJpYXQiOjE3NzMzNjc3OTN9.uF4XThXlqjbeyLPCuudAYqFls7RlNaMuygZ9VY5L69c"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWMwY2Y2ZGQ0ODZmZDAwMTU5ZDE4ZDQiLCJpYXQiOjE3NzQyNDM2OTN9.KKfMmWan39DLN5Nx3uI_y8CoWcOKmxgF8sKtu8Fgu_g"
 }
-2026-03-13 10:09:55 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
-2026-03-13 10:09:55 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users/login
-2026-03-13 10:09:55 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.LoginUserRequest@7548e1fb
-2026-03-13 10:09:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 200
-2026-03-13 10:09:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
+2026-03-23 13:28:14 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-23 13:28:14 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users/login
+2026-03-23 13:28:14 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "email" : "robertc2753697@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-23 13:28:16 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 200
+2026-03-23 13:28:16 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
     "user": {
-        "_id": "69b371f119c156001532c7bb",
+        "_id": "69c0cf6dd486fd00159d18d4",
         "firstName": "Robert",
         "lastName": "Baratheon",
-        "email": "robertec13d715@fake.com",
+        "email": "robertc2753697@fake.com",
         "__v": 2
     },
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzNzFmMTE5YzE1NjAwMTUzMmM3YmIiLCJpYXQiOjE3NzMzNjc3OTR9.EGtTLR7p5U6W4LB1L7qAxPO1MKO7ZMsKxS9ZDUNRMeg"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWMwY2Y2ZGQ0ODZmZDAwMTU5ZDE4ZDQiLCJpYXQiOjE3NzQyNDM2OTR9.ckoJrQvEj35MEouzsiTRZJxbekE6V-yk6wS1L2MLi3w"
 }
-2026-03-13 10:09:56 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: User can log in successfully via API
-2026-03-13 10:09:56 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
-2026-03-13 10:09:56 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: Site returns HTTP 200 on GET /
-2026-03-13 10:09:57 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: Site returns HTTP 200 on GET /
-2026-03-13 10:17:53 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can be added successfully via API
-2026-03-13 10:17:53 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: User can be added successfully via API
-2026-03-13 10:17:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
-2026-03-13 10:17:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users
-2026-03-13 10:17:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.AddUserRequest@6ac4c3f7
-2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 201
-2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
+2026-03-23 13:28:16 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can log in successfully via API
+2026-03-23 13:28:16 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can login in UI using credentials created via API
+2026-03-23 13:28:16 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 13:28:16 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can login in UI using credentials created via API
+2026-03-23 13:28:16 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Execution mode set to MOBILE_WEB for scenario: User can login in UI using credentials created via API
+2026-03-23 13:28:16 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-23 13:28:16 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-23 13:28:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Initializing Appium driver in MOBILE_WEB mode
+2026-03-23 13:28:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - browserName = Chrome
+2026-03-23 13:28:16 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - chromedriverAutodownload = true
+2026-03-23 13:28:39 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Appium Driver initialized successfully
+2026-03-23 13:28:39 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformName = Android
+2026-03-23 13:28:39 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - deviceName = emulator-5554
+2026-03-23 13:28:39 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformVersion = 15
+2026-03-23 13:28:39 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - automationName = UIAutomator2
+2026-03-23 13:28:39 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appiumServerUrl = http://localhost:4723
+2026-03-23 13:28:39 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - executionMode = MOBILE_WEB
+2026-03-23 13:28:39 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: User can login in UI using credentials created via API
+2026-03-23 13:28:39 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Current application set to CHROME
+2026-03-23 13:28:39 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: User can login in UI using credentials created via API with ExecutionType=Hybrid
+2026-03-23 13:28:39 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-23 13:28:39 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-23 13:28:39 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robertadb652c6@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-23 13:28:41 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-23 13:28:41 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
     "user": {
-        "_id": "69b373d219c156001532c7c0",
+        "_id": "69c0cf88d486fd00159d18d6",
         "firstName": "Robert",
         "lastName": "Baratheon",
-        "email": "robert258a6275@fake.com",
+        "email": "robertadb652c6@fake.com",
         "__v": 1
     },
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzNzNkMjE5YzE1NjAwMTUzMmM3YzAiLCJpYXQiOjE3NzMzNjgyNzR9.nPWNnK4kPu_H-GROj3N71ebPBcmsxZmJOcgXfA7FVwc"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWMwY2Y4OGQ0ODZmZDAwMTU5ZDE4ZDYiLCJpYXQiOjE3NzQyNDM3MjB9.5y0CrLxjRr_ezFgDg_ujNvnRinO5utG6fxCL3s-AqN4"
 }
-2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: User can be added successfully via API
-2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can log in successfully via API
-2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: User can log in successfully via API
-2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
-2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users
-2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.AddUserRequest@14be750c
-2026-03-13 10:17:57 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 201
-2026-03-13 10:17:57 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
-    "user": {
-        "_id": "69b373d319c156001532c7c2",
-        "firstName": "Robert",
-        "lastName": "Baratheon",
-        "email": "robert491dd48b@fake.com",
-        "__v": 1
-    },
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzNzNkMzE5YzE1NjAwMTUzMmM3YzIiLCJpYXQiOjE3NzMzNjgyNzV9.Df85SNSeXWNUxHOHne40F_hERPG_6Fl0f2zdK6rzSBQ"
-}
-2026-03-13 10:17:57 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
-2026-03-13 10:17:57 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users/login
-2026-03-13 10:17:57 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.LoginUserRequest@7548e1fb
-2026-03-13 10:17:58 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 200
-2026-03-13 10:17:58 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
-    "user": {
-        "_id": "69b373d319c156001532c7c2",
-        "firstName": "Robert",
-        "lastName": "Baratheon",
-        "email": "robert491dd48b@fake.com",
-        "__v": 2
-    },
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzNzNkMzE5YzE1NjAwMTUzMmM3YzIiLCJpYXQiOjE3NzMzNjgyNzd9.FOGaGaFhigdU9W4iGzumVNmMCDkjcT4ty6zeiMSj6Co"
-}
-2026-03-13 10:17:58 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: User can log in successfully via API
-2026-03-13 10:17:58 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
-2026-03-13 10:17:58 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: Site returns HTTP 200 on GET /
-2026-03-13 10:17:59 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: Site returns HTTP 200 on GET /
-2026-03-13 10:18:16 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
-2026-03-13 10:19:02 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Calculator elements should be visible
-2026-03-13 10:19:03 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
-2026-03-13 10:19:08 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='a']
-2026-03-13 10:19:08 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='b']
-2026-03-13 10:19:09 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //select[@id='op']
-2026-03-13 10:19:09 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //button[@id='compute']
-2026-03-13 10:19:09 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //div[@id='result']
-2026-03-13 10:19:12 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Calculator elements should be visible
-2026-03-13 10:19:12 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
-2026-03-13 10:19:33 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (add)
-2026-03-13 10:19:35 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 2.0
-2026-03-13 10:19:38 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 3.0
-2026-03-13 10:19:40 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: add
-2026-03-13 10:19:42 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
-2026-03-13 10:19:46 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (add)
-2026-03-13 10:19:46 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
-2026-03-13 10:20:13 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (subtract)
-2026-03-13 10:20:19 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
-2026-03-13 10:20:22 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 4.0
-2026-03-13 10:20:28 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: sub
-2026-03-13 10:20:28 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
-2026-03-13 10:20:33 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (subtract)
-2026-03-13 10:20:33 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
-2026-03-13 10:21:00 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (multiply)
-2026-03-13 10:21:01 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 7.0
-2026-03-13 10:21:06 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 6.0
-2026-03-13 10:21:09 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: mul
-2026-03-13 10:21:11 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
-2026-03-13 10:21:14 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (multiply)
-2026-03-13 10:21:14 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
-2026-03-13 10:21:31 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (divide)
-2026-03-13 10:21:33 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
-2026-03-13 10:21:34 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 5.0
-2026-03-13 10:21:39 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: div
-2026-03-13 10:21:40 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
-2026-03-13 10:21:43 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (divide)
+2026-03-23 13:28:44 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Entered text in element: By.id: email - Text: robertadb652c6@fake.com
+2026-03-23 13:28:45 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Entered text in element: By.id: password - Text: robertbaratheon
+2026-03-23 13:28:46 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Clicked on element: By.id: submit
+2026-03-23 13:28:48 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can login in UI using credentials created via API
+2026-03-23 13:28:49 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - native app terminated successfully: com.Advantage.aShopping
+2026-03-23 13:28:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Chrome terminated successfully: com.android.chrome
+2026-03-23 13:28:51 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: User can login in UI using credentials created via API
+2026-03-23 13:28:51 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-23 13:28:51 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 13:28:51 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: Site returns HTTP 200 on GET /
+2026-03-23 13:28:51 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Site returns HTTP 200 on GET / with ExecutionType=API
+2026-03-23 13:28:53 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: Site returns HTTP 200 on GET /
+2026-03-23 13:28:53 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-23 13:28:53 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 13:28:53 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Execution mode set to MOBILE_WEB for scenario: Calculator elements should be visible
+2026-03-23 13:28:53 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-23 13:28:53 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-23 13:28:53 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Initializing Appium driver in MOBILE_WEB mode
+2026-03-23 13:28:53 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - browserName = Chrome
+2026-03-23 13:28:53 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - chromedriverAutodownload = true
+2026-03-23 13:29:07 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Appium Driver initialized successfully
+2026-03-23 13:29:07 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformName = Android
+2026-03-23 13:29:07 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - deviceName = emulator-5554
+2026-03-23 13:29:07 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformVersion = 15
+2026-03-23 13:29:07 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - automationName = UIAutomator2
+2026-03-23 13:29:07 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appiumServerUrl = http://localhost:4723
+2026-03-23 13:29:07 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - executionMode = MOBILE_WEB
+2026-03-23 13:29:08 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Calculator elements should be visible
+2026-03-23 13:29:08 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Current application set to CHROME
+2026-03-23 13:29:08 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Calculator elements should be visible with ExecutionType=UI
+2026-03-23 13:29:08 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
+2026-03-23 13:29:09 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //input[@id='a']
+2026-03-23 13:29:10 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //input[@id='b']
+2026-03-23 13:29:10 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //select[@id='op']
+2026-03-23 13:29:10 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //button[@id='compute']
+2026-03-23 13:29:10 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //div[@id='result']
+2026-03-23 13:29:11 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - native app terminated successfully: com.Advantage.aShopping
+2026-03-23 13:29:12 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Chrome terminated successfully: com.android.chrome
+2026-03-23 13:29:13 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Calculator elements should be visible
+2026-03-23 13:32:27 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 13:32:28 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-23 13:32:28 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Execution mode set to MOBILE_WEB for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 13:32:28 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-23 13:32:28 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-23 13:32:28 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Initializing Appium driver in MOBILE_WEB mode
+2026-03-23 13:32:28 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - browserName = Chrome
+2026-03-23 13:32:28 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - chromedriverAutodownload = true
+2026-03-23 13:32:46 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - Appium Driver initialized successfully
+2026-03-23 13:32:46 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformName = Android
+2026-03-23 13:32:46 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - deviceName = emulator-5554
+2026-03-23 13:32:46 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - platformVersion = 15
+2026-03-23 13:32:46 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - automationName = UIAutomator2
+2026-03-23 13:32:46 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - appiumServerUrl = http://localhost:4723
+2026-03-23 13:32:46 [main] INFO  com.cheq.demo_webshop.factory.AndroidDriverFactory - executionMode = MOBILE_WEB
+2026-03-23 13:32:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Verify switching from mobile web to native app with UI validation
+2026-03-23 13:32:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Current application set to CHROME
+2026-03-23 13:32:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Verify switching from mobile web to native app with UI validation with ExecutionType=UI
+2026-03-23 13:32:58 [main] INFO  com.cheq.demo_webshop.utils.ui.ApplicationSwitchUtil - Available contexts before switching to native: [NATIVE_APP, CHROMIUM]
+2026-03-23 13:32:58 [main] INFO  com.cheq.demo_webshop.utils.ui.ApplicationSwitchUtil - Switched context to NATIVE_APP
+2026-03-23 13:32:58 [main] INFO  com.cheq.demo_webshop.utils.ui.ApplicationSwitchUtil - Switched to native app: com.Advantage.aShopping
+2026-03-23 13:33:05 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - native app terminated successfully: com.Advantage.aShopping
+2026-03-23 13:33:05 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Chrome terminated successfully: com.android.chrome
+2026-03-23 13:33:06 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Verify switching from mobile web to native app with UI validation

@@ -1,4 +1,4 @@
-@ui @compare
+@compare
 Feature: Verify Adding Product to Compare List
 
   Scenario: Adding Product to Compare List

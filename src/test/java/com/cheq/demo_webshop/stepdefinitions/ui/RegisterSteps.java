@@ -7,8 +7,8 @@ import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.datatable.DataTable;
 
 import com.cheq.demo_webshop.manager.DriverManager;
-import com.cheq.demo_webshop.pages.mobile.HomePage;
-import com.cheq.demo_webshop.pages.mobile.RegisterPage;
+import com.cheq.demo_webshop.pages.HomePage;
+import com.cheq.demo_webshop.pages.RegisterPage;
 
 import io.cucumber.java.en.*;
 

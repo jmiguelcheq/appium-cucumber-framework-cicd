@@ -1,4 +1,4 @@
-@ui @native
+@native
 Feature: Native App Functionality
 
   Scenario: Login

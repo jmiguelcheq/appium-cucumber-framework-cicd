@@ -1,0 +1,10 @@
+{
+    "user": {
+        "_id": "69b8b7c219742000152a7442",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert473e5c5d@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI4YjdjMjE5NzQyMDAwMTUyYTc0NDIiLCJpYXQiOjE3NzM3MTMzNDZ9.5b0FVVs6LGHyo_VcwaOWmi9nUsc2C2x08gVPD12MuYY"
+}

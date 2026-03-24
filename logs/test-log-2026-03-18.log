@@ -1,0 +1,811 @@
+2026-03-18 03:54:03 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can be added successfully via API
+2026-03-18 03:54:03 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 03:54:03 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can be added successfully via API
+2026-03-18 03:54:04 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 03:54:04 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-18 03:54:04 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robertfbe7dad9@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 03:54:07 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-18 03:54:07 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9b15d19742000152a76cc",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robertfbe7dad9@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YjE1ZDE5NzQyMDAwMTUyYTc2Y2MiLCJpYXQiOjE3NzM3NzcyNDV9.SGrfOE_J_UkHPaxg9QoLBH5NqWjdTTT-qRD_uNXcqlY"
+}
+2026-03-18 03:54:07 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can be added successfully via API
+2026-03-18 03:54:07 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can log in successfully via API
+2026-03-18 03:54:07 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 03:54:07 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can log in successfully via API
+2026-03-18 03:54:07 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 03:54:07 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-18 03:54:07 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robert1a6e68a7@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 03:54:08 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-18 03:54:08 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9b15fd5d7ad001520e5b4",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert1a6e68a7@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YjE1ZmQ1ZDdhZDAwMTUyMGU1YjQiLCJpYXQiOjE3NzM3NzcyNDd9.aTPvyoZp26J50pIRa9bjAy-9zmqpunnzrx3giapb5OA"
+}
+2026-03-18 03:54:08 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 03:54:08 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users/login
+2026-03-18 03:54:08 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "email" : "robert1a6e68a7@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 03:54:09 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 200
+2026-03-18 03:54:09 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9b15fd5d7ad001520e5b4",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert1a6e68a7@fake.com",
+        "__v": 2
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YjE1ZmQ1ZDdhZDAwMTUyMGU1YjQiLCJpYXQiOjE3NzM3NzcyNDh9.orACs1lh1DTuPTOWDdOQPTm8rladya_tnDOhbb6gvas"
+}
+2026-03-18 03:54:10 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can log in successfully via API
+2026-03-18 03:54:10 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-18 03:54:10 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 03:54:10 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: Site returns HTTP 200 on GET /
+2026-03-18 03:54:10 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: Site returns HTTP 200 on GET /
+2026-03-18 03:54:10 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-18 03:54:10 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 03:54:11 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-18 03:54:11 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-18 03:54:53 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Appium Driver initialized successfully
+2026-03-18 03:54:53 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformName = Android
+2026-03-18 03:54:53 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - deviceName = emulator-5554
+2026-03-18 03:54:53 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformVersion = 15
+2026-03-18 03:54:53 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - browserName = Chrome
+2026-03-18 03:54:53 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - chromedriverAutodownload = true
+2026-03-18 03:54:53 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - appiumServerUrl = http://localhost:4723
+2026-03-18 03:54:54 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Calculator elements should be visible
+2026-03-18 03:54:55 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
+2026-03-18 03:54:58 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //input[@id='a']
+2026-03-18 03:54:58 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //input[@id='b']
+2026-03-18 03:54:59 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //select[@id='op']
+2026-03-18 03:54:59 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //button[@id='compute']
+2026-03-18 03:54:59 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //div[@id='result']
+2026-03-18 03:55:07 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Calculator elements should be visible
+2026-03-18 04:10:28 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can be added successfully via API
+2026-03-18 04:10:28 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 04:10:28 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can be added successfully via API
+2026-03-18 04:10:29 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 04:10:29 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-18 04:10:29 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robertc6c2411f@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 04:10:32 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-18 04:10:32 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9b53619742000152a76d3",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robertc6c2411f@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YjUzNjE5NzQyMDAwMTUyYTc2ZDMiLCJpYXQiOjE3NzM3NzgyMzB9.-MSj9mNHyFaYKr_bSVHOqam7isXrIfaJwlvCsLkdBzE"
+}
+2026-03-18 04:10:32 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can be added successfully via API
+2026-03-18 04:10:32 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can log in successfully via API
+2026-03-18 04:10:32 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 04:10:32 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can log in successfully via API
+2026-03-18 04:10:32 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 04:10:32 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-18 04:10:32 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robert0b5ef09a@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 04:10:33 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-18 04:10:33 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9b53819742000152a76d5",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert0b5ef09a@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YjUzODE5NzQyMDAwMTUyYTc2ZDUiLCJpYXQiOjE3NzM3NzgyMzJ9.rpfNNslTs-K6ayVCgwo-ULVShJGeopBO7Km2ClD6tBI"
+}
+2026-03-18 04:10:33 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 04:10:33 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users/login
+2026-03-18 04:10:33 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "email" : "robert0b5ef09a@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 04:10:34 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 200
+2026-03-18 04:10:34 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9b53819742000152a76d5",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert0b5ef09a@fake.com",
+        "__v": 2
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YjUzODE5NzQyMDAwMTUyYTc2ZDUiLCJpYXQiOjE3NzM3NzgyMzN9.Kc2VR0qOjbFXMeurAnCt3snCEvEFQAasb6bkpIdZm3k"
+}
+2026-03-18 04:10:34 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can log in successfully via API
+2026-03-18 04:10:34 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-18 04:10:34 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 04:10:34 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: Site returns HTTP 200 on GET /
+2026-03-18 04:10:35 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: Site returns HTTP 200 on GET /
+2026-03-18 04:10:35 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-18 04:10:35 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 04:10:35 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-18 04:10:35 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-18 04:11:21 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Appium Driver initialized successfully
+2026-03-18 04:11:21 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformName = Android
+2026-03-18 04:11:21 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - deviceName = emulator-5554
+2026-03-18 04:11:21 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformVersion = 15
+2026-03-18 04:11:21 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - browserName = Chrome
+2026-03-18 04:11:21 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - chromedriverAutodownload = true
+2026-03-18 04:11:21 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - appiumServerUrl = http://localhost:4723
+2026-03-18 04:11:23 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Calculator elements should be visible
+2026-03-18 04:11:25 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
+2026-03-18 04:11:30 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //input[@id='a']
+2026-03-18 04:11:31 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //input[@id='b']
+2026-03-18 04:11:32 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //select[@id='op']
+2026-03-18 04:11:33 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //button[@id='compute']
+2026-03-18 04:11:35 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //div[@id='result']
+2026-03-18 04:11:40 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Calculator elements should be visible
+2026-03-18 04:48:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can be added successfully via API
+2026-03-18 04:48:50 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 04:48:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can be added successfully via API
+2026-03-18 04:48:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: User can be added successfully via API with ExecutionType=API
+2026-03-18 04:48:51 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 04:48:51 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-18 04:48:51 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robert0219603c@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 04:48:54 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-18 04:48:54 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9be34d5d7ad001520e5ef",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert0219603c@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YmUzNGQ1ZDdhZDAwMTUyMGU1ZWYiLCJpYXQiOjE3NzM3ODA1MzJ9.iwgczct56Wf64JeqE46ekF_AiXwaF67BaAZ-O4rsKXA"
+}
+2026-03-18 04:48:54 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can be added successfully via API
+2026-03-18 04:48:54 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can log in successfully via API
+2026-03-18 04:48:54 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 04:48:54 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can log in successfully via API
+2026-03-18 04:48:54 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: User can log in successfully via API with ExecutionType=API
+2026-03-18 04:48:54 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 04:48:54 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-18 04:48:54 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "roberta37c0e3d@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 04:48:55 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-18 04:48:55 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9be36d5d7ad001520e5f1",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "roberta37c0e3d@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YmUzNmQ1ZDdhZDAwMTUyMGU1ZjEiLCJpYXQiOjE3NzM3ODA1MzR9.2JaxjJJxELT8C22rp1TFsuP8SskXXnqPZu9VSyiISLk"
+}
+2026-03-18 04:48:55 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 04:48:55 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users/login
+2026-03-18 04:48:55 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "email" : "roberta37c0e3d@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 04:48:57 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 200
+2026-03-18 04:48:57 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9be36d5d7ad001520e5f1",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "roberta37c0e3d@fake.com",
+        "__v": 2
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YmUzNmQ1ZDdhZDAwMTUyMGU1ZjEiLCJpYXQiOjE3NzM3ODA1MzV9.rUnHtYE1P2sXjYnuAe6O3njmwnjvn9jqvc_AVKXT60g"
+}
+2026-03-18 04:48:57 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can log in successfully via API
+2026-03-18 04:48:57 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can login in UI using credentials created via API
+2026-03-18 04:48:57 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 04:48:57 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can login in UI using credentials created via API
+2026-03-18 04:48:57 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-18 04:48:57 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-18 04:49:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Appium Driver initialized successfully
+2026-03-18 04:49:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformName = Android
+2026-03-18 04:49:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - deviceName = emulator-5554
+2026-03-18 04:49:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformVersion = 15
+2026-03-18 04:49:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - browserName = Chrome
+2026-03-18 04:49:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - chromedriverAutodownload = true
+2026-03-18 04:49:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - appiumServerUrl = http://localhost:4723
+2026-03-18 04:49:52 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: User can login in UI using credentials created via API
+2026-03-18 04:49:52 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: User can login in UI using credentials created via API with ExecutionType=Hybrid
+2026-03-18 04:49:52 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 04:49:52 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-18 04:49:52 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robert39435886@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 04:49:54 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-18 04:49:54 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9be71d5d7ad001520e5f4",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert39435886@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YmU3MWQ1ZDdhZDAwMTUyMGU1ZjQiLCJpYXQiOjE3NzM3ODA1OTN9.SPCGfLZrEMMN_9QBrAUmY-stLzjKC9YF2sqbd_cTm6w"
+}
+2026-03-18 04:50:07 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can login in UI using credentials created via API
+2026-03-18 04:50:08 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: step with uuid 021aa828-f9f5-448b-a8c6-aa328a295965 not found
+2026-03-18 04:50:10 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: User can login in UI using credentials created via API
+2026-03-18 04:50:10 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-18 04:50:10 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 04:50:10 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: Site returns HTTP 200 on GET /
+2026-03-18 04:50:10 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Site returns HTTP 200 on GET / with ExecutionType=API
+2026-03-18 04:50:10 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: Site returns HTTP 200 on GET /
+2026-03-18 04:50:10 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-18 04:50:10 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 04:50:10 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-18 04:50:10 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-18 04:50:30 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Appium Driver initialized successfully
+2026-03-18 04:50:30 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformName = Android
+2026-03-18 04:50:30 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - deviceName = emulator-5554
+2026-03-18 04:50:30 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformVersion = 15
+2026-03-18 04:50:30 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - browserName = Chrome
+2026-03-18 04:50:30 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - chromedriverAutodownload = true
+2026-03-18 04:50:30 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - appiumServerUrl = http://localhost:4723
+2026-03-18 04:50:31 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Calculator elements should be visible
+2026-03-18 04:50:31 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Calculator elements should be visible with ExecutionType=UI
+2026-03-18 04:50:32 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
+2026-03-18 04:50:35 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //input[@id='a']
+2026-03-18 04:50:35 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //input[@id='b']
+2026-03-18 04:50:35 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //select[@id='op']
+2026-03-18 04:50:35 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //button[@id='compute']
+2026-03-18 04:50:36 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //div[@id='result']
+2026-03-18 04:50:38 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Calculator elements should be visible
+2026-03-18 05:02:09 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can be added successfully via API
+2026-03-18 05:02:09 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:02:09 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can be added successfully via API
+2026-03-18 05:02:09 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: User can be added successfully via API with ExecutionType=API
+2026-03-18 05:02:10 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 05:02:10 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-18 05:02:10 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robert8b3b02d8@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 05:02:13 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-18 05:02:13 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9c153d5d7ad001520e5f8",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert8b3b02d8@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YzE1M2Q1ZDdhZDAwMTUyMGU1ZjgiLCJpYXQiOjE3NzM3ODEzMzF9.8NbqyhfwtanSUfAAiuLFSobbtVsiTybJ-1tCtizvJkc"
+}
+2026-03-18 05:02:13 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can be added successfully via API
+2026-03-18 05:02:13 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can log in successfully via API
+2026-03-18 05:02:13 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:02:13 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can log in successfully via API
+2026-03-18 05:02:13 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: User can log in successfully via API with ExecutionType=API
+2026-03-18 05:02:13 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 05:02:13 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-18 05:02:13 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robert1a4a4e92@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 05:02:14 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-18 05:02:14 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9c154d5d7ad001520e5fa",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert1a4a4e92@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YzE1NGQ1ZDdhZDAwMTUyMGU1ZmEiLCJpYXQiOjE3NzM3ODEzMzJ9.kCLy4FNyNh1R59BuT7RD2GlZNOm5PozJNA4B5WPwjzs"
+}
+2026-03-18 05:02:14 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 05:02:14 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users/login
+2026-03-18 05:02:14 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "email" : "robert1a4a4e92@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 05:02:15 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 200
+2026-03-18 05:02:15 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9c154d5d7ad001520e5fa",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert1a4a4e92@fake.com",
+        "__v": 2
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YzE1NGQ1ZDdhZDAwMTUyMGU1ZmEiLCJpYXQiOjE3NzM3ODEzMzR9.3I0tk2ccHfFx8bJ5XGaleKLJog65xTJ2TAx-bjjcF_Q"
+}
+2026-03-18 05:02:15 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can log in successfully via API
+2026-03-18 05:02:15 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can login in UI using credentials created via API
+2026-03-18 05:02:15 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:02:15 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can login in UI using credentials created via API
+2026-03-18 05:02:15 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-18 05:02:15 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-18 05:02:56 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Appium Driver initialized successfully
+2026-03-18 05:02:56 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformName = Android
+2026-03-18 05:02:56 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - deviceName = emulator-5554
+2026-03-18 05:02:56 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformVersion = 15
+2026-03-18 05:02:56 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - browserName = Chrome
+2026-03-18 05:02:56 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - chromedriverAutodownload = true
+2026-03-18 05:02:56 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - appiumServerUrl = http://localhost:4723
+2026-03-18 05:02:56 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: User can login in UI using credentials created via API
+2026-03-18 05:02:56 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: User can login in UI using credentials created via API with ExecutionType=Hybrid
+2026-03-18 05:02:56 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 05:02:56 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-18 05:02:56 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robert390bde4c@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 05:02:57 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-18 05:02:57 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9c180d5d7ad001520e5fd",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert390bde4c@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YzE4MGQ1ZDdhZDAwMTUyMGU1ZmQiLCJpYXQiOjE3NzM3ODEzNzZ9.87pelIGJI1s24Iud1rDJSgwOa-XtFeW_o2Kayl1H0bI"
+}
+2026-03-18 05:03:08 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Entered text in element: By.id: email - Text: robert390bde4c@fake.com
+2026-03-18 05:03:11 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Entered text in element: By.id: password - Text: robertbaratheon
+2026-03-18 05:03:13 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Clicked on element: By.id: submit
+2026-03-18 05:03:25 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can login in UI using credentials created via API
+2026-03-18 05:03:26 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: step with uuid bbb63442-303d-4b2b-b631-9c24b9e4dbf0 not found
+2026-03-18 05:03:28 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: User can login in UI using credentials created via API
+2026-03-18 05:03:28 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-18 05:03:28 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:03:28 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: Site returns HTTP 200 on GET /
+2026-03-18 05:03:28 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Site returns HTTP 200 on GET / with ExecutionType=API
+2026-03-18 05:03:29 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: Site returns HTTP 200 on GET /
+2026-03-18 05:03:29 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-18 05:03:29 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:03:29 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-18 05:03:29 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-18 05:03:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Appium Driver initialized successfully
+2026-03-18 05:03:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformName = Android
+2026-03-18 05:03:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - deviceName = emulator-5554
+2026-03-18 05:03:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformVersion = 15
+2026-03-18 05:03:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - browserName = Chrome
+2026-03-18 05:03:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - chromedriverAutodownload = true
+2026-03-18 05:03:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - appiumServerUrl = http://localhost:4723
+2026-03-18 05:03:52 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Calculator elements should be visible
+2026-03-18 05:03:52 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Calculator elements should be visible with ExecutionType=UI
+2026-03-18 05:03:53 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
+2026-03-18 05:03:55 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //input[@id='a']
+2026-03-18 05:03:55 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //input[@id='b']
+2026-03-18 05:03:56 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //select[@id='op']
+2026-03-18 05:03:56 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //button[@id='compute']
+2026-03-18 05:03:56 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //div[@id='result']
+2026-03-18 05:03:58 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Calculator elements should be visible
+2026-03-18 05:06:02 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can be added successfully via API
+2026-03-18 05:06:02 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:06:02 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can be added successfully via API
+2026-03-18 05:06:02 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: User can be added successfully via API with ExecutionType=API
+2026-03-18 05:06:03 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 05:06:03 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-18 05:06:03 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robert5846a75a@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 05:06:05 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-18 05:06:06 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9c23c19742000152a772a",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert5846a75a@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YzIzYzE5NzQyMDAwMTUyYTc3MmEiLCJpYXQiOjE3NzM3ODE1NjR9.R8IuQsP5s6QI1CWh89_iEMw1TIrjivhxQLymBEotjhw"
+}
+2026-03-18 05:06:06 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can be added successfully via API
+2026-03-18 05:06:06 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can log in successfully via API
+2026-03-18 05:06:06 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:06:06 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can log in successfully via API
+2026-03-18 05:06:06 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: User can log in successfully via API with ExecutionType=API
+2026-03-18 05:06:06 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 05:06:06 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-18 05:06:06 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robert7b80936b@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 05:06:07 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-18 05:06:07 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9c23d19742000152a772c",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert7b80936b@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YzIzZDE5NzQyMDAwMTUyYTc3MmMiLCJpYXQiOjE3NzM3ODE1NjV9.Fay_oQxzsq4TkMFS3M8slp4TSn5TcyMGTnv33JXVebA"
+}
+2026-03-18 05:06:07 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 05:06:07 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users/login
+2026-03-18 05:06:07 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "email" : "robert7b80936b@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 05:06:08 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 200
+2026-03-18 05:06:08 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9c23d19742000152a772c",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert7b80936b@fake.com",
+        "__v": 2
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YzIzZDE5NzQyMDAwMTUyYTc3MmMiLCJpYXQiOjE3NzM3ODE1Njd9._a9ids3sPtTUxnOw1BBN9ual-61U-rJkhWrJhHCdwME"
+}
+2026-03-18 05:06:08 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can log in successfully via API
+2026-03-18 05:06:08 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can login in UI using credentials created via API
+2026-03-18 05:06:08 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:06:08 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-18 05:06:08 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-18 05:06:32 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Appium Driver initialized successfully
+2026-03-18 05:06:32 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformName = Android
+2026-03-18 05:06:32 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - deviceName = emulator-5554
+2026-03-18 05:06:32 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformVersion = 15
+2026-03-18 05:06:32 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - browserName = Chrome
+2026-03-18 05:06:32 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - chromedriverAutodownload = true
+2026-03-18 05:06:32 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - appiumServerUrl = http://localhost:4723
+2026-03-18 05:06:32 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: User can login in UI using credentials created via API
+2026-03-18 05:06:32 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can login in UI using credentials created via API
+2026-03-18 05:06:32 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: User can login in UI using credentials created via API with ExecutionType=Hybrid
+2026-03-18 05:06:32 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 05:06:32 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-18 05:06:32 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robert308d5d8c@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 05:06:33 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-18 05:06:33 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9c258d5d7ad001520e600",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert308d5d8c@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YzI1OGQ1ZDdhZDAwMTUyMGU2MDAiLCJpYXQiOjE3NzM3ODE1OTJ9.wHdAbqDolNxw1tuIyTznRFXAhYAiVuEiuEPUa1jmSBI"
+}
+2026-03-18 05:06:40 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Entered text in element: By.id: email - Text: robert308d5d8c@fake.com
+2026-03-18 05:06:43 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Entered text in element: By.id: password - Text: robertbaratheon
+2026-03-18 05:06:46 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Clicked on element: By.id: submit
+2026-03-18 05:06:48 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can login in UI using credentials created via API
+2026-03-18 05:06:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: User can login in UI using credentials created via API
+2026-03-18 05:06:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-18 05:06:50 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:06:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: Site returns HTTP 200 on GET /
+2026-03-18 05:06:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Site returns HTTP 200 on GET / with ExecutionType=API
+2026-03-18 05:06:51 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: Site returns HTTP 200 on GET /
+2026-03-18 05:06:51 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-18 05:06:51 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:06:51 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-18 05:06:51 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-18 05:07:06 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Appium Driver initialized successfully
+2026-03-18 05:07:06 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformName = Android
+2026-03-18 05:07:06 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - deviceName = emulator-5554
+2026-03-18 05:07:06 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformVersion = 15
+2026-03-18 05:07:06 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - browserName = Chrome
+2026-03-18 05:07:06 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - chromedriverAutodownload = true
+2026-03-18 05:07:06 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - appiumServerUrl = http://localhost:4723
+2026-03-18 05:07:07 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Calculator elements should be visible
+2026-03-18 05:07:07 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Calculator elements should be visible with ExecutionType=UI
+2026-03-18 05:07:08 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
+2026-03-18 05:07:09 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //input[@id='a']
+2026-03-18 05:07:09 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //input[@id='b']
+2026-03-18 05:07:10 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //select[@id='op']
+2026-03-18 05:07:10 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //button[@id='compute']
+2026-03-18 05:07:10 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //div[@id='result']
+2026-03-18 05:07:12 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Calculator elements should be visible
+2026-03-18 05:35:18 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can be added successfully via API
+2026-03-18 05:35:18 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:35:18 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can be added successfully via API
+2026-03-18 05:35:18 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: User can be added successfully via API with ExecutionType=API
+2026-03-18 05:35:19 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 05:35:19 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-18 05:35:19 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robertf1329b4d@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 05:35:21 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-18 05:35:21 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9c91819742000152a772f",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robertf1329b4d@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YzkxODE5NzQyMDAwMTUyYTc3MmYiLCJpYXQiOjE3NzM3ODMzMjB9.lhtcSfuwYK60gjWKMcQiV2lEE9HX_gTnMrGrdQZkBJE"
+}
+2026-03-18 05:35:21 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can be added successfully via API
+2026-03-18 05:35:21 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can log in successfully via API
+2026-03-18 05:35:21 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:35:21 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can log in successfully via API
+2026-03-18 05:35:21 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: User can log in successfully via API with ExecutionType=API
+2026-03-18 05:35:21 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 05:35:21 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-18 05:35:21 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robert845529ee@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 05:35:23 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-18 05:35:23 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9c919d5d7ad001520e607",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert845529ee@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YzkxOWQ1ZDdhZDAwMTUyMGU2MDciLCJpYXQiOjE3NzM3ODMzMjF9.u5QNlPrjFgpLvyIxAOTXDUWPcIBeeo6OgIIU15Ut6Go"
+}
+2026-03-18 05:35:23 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 05:35:23 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users/login
+2026-03-18 05:35:23 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "email" : "robert845529ee@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 05:35:24 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 200
+2026-03-18 05:35:24 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9c919d5d7ad001520e607",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert845529ee@fake.com",
+        "__v": 2
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5YzkxOWQ1ZDdhZDAwMTUyMGU2MDciLCJpYXQiOjE3NzM3ODMzMjN9.VE8Dk8vAJSeJZ_Fc20ZnIqCsTZrWdTjGH3BIHHHreTc"
+}
+2026-03-18 05:35:24 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can log in successfully via API
+2026-03-18 05:35:24 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can login in UI using credentials created via API
+2026-03-18 05:35:24 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:35:24 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can login in UI using credentials created via API
+2026-03-18 05:35:24 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-18 05:35:24 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-18 05:36:05 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Appium Driver initialized successfully
+2026-03-18 05:36:05 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformName = Android
+2026-03-18 05:36:05 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - deviceName = emulator-5554
+2026-03-18 05:36:05 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformVersion = 15
+2026-03-18 05:36:05 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - browserName = Chrome
+2026-03-18 05:36:05 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - chromedriverAutodownload = true
+2026-03-18 05:36:05 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - appiumServerUrl = http://localhost:4723
+2026-03-18 05:36:05 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: User can login in UI using credentials created via API
+2026-03-18 05:36:05 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: User can login in UI using credentials created via API with ExecutionType=Hybrid
+2026-03-18 05:36:05 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 05:36:05 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-18 05:36:05 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robert15d26ec2@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 05:36:07 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-18 05:36:07 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9c94519742000152a7733",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert15d26ec2@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5Yzk0NTE5NzQyMDAwMTUyYTc3MzMiLCJpYXQiOjE3NzM3ODMzNjV9.CDFI_HLw-6HuL5m8pZaOm3TdiZ3tR5RG02GSKK8LM_I"
+}
+2026-03-18 05:36:16 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Entered text in element: By.id: email - Text: robert15d26ec2@fake.com
+2026-03-18 05:36:19 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Entered text in element: By.id: password - Text: robertbaratheon
+2026-03-18 05:36:22 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Clicked on element: By.id: submit
+2026-03-18 05:36:26 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can login in UI using credentials created via API
+2026-03-18 05:36:29 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: User can login in UI using credentials created via API
+2026-03-18 05:36:29 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-18 05:36:29 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:36:29 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: Site returns HTTP 200 on GET /
+2026-03-18 05:36:29 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Site returns HTTP 200 on GET / with ExecutionType=API
+2026-03-18 05:36:30 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: Site returns HTTP 200 on GET /
+2026-03-18 05:36:30 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-18 05:36:30 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:36:30 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-18 05:36:30 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-18 05:36:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Appium Driver initialized successfully
+2026-03-18 05:36:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformName = Android
+2026-03-18 05:36:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - deviceName = emulator-5554
+2026-03-18 05:36:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformVersion = 15
+2026-03-18 05:36:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - browserName = Chrome
+2026-03-18 05:36:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - chromedriverAutodownload = true
+2026-03-18 05:36:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - appiumServerUrl = http://localhost:4723
+2026-03-18 05:36:51 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Calculator elements should be visible
+2026-03-18 05:36:51 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Calculator elements should be visible with ExecutionType=UI
+2026-03-18 05:36:53 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
+2026-03-18 05:36:55 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //input[@id='a']
+2026-03-18 05:36:56 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //input[@id='b']
+2026-03-18 05:36:56 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //select[@id='op']
+2026-03-18 05:36:56 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //button[@id='compute']
+2026-03-18 05:36:56 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //div[@id='result']
+2026-03-18 05:36:58 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Calculator elements should be visible
+2026-03-18 05:40:55 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can be added successfully via API
+2026-03-18 05:40:55 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:40:55 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can be added successfully via API
+2026-03-18 05:40:55 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: User can be added successfully via API with ExecutionType=API
+2026-03-18 05:40:56 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 05:40:56 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-18 05:40:56 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robert4d6db977@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 05:40:58 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-18 05:40:58 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9ca69d5d7ad001520e60a",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert4d6db977@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5Y2E2OWQ1ZDdhZDAwMTUyMGU2MGEiLCJpYXQiOjE3NzM3ODM2NTd9.E6tY0ZMHUlpANtvMoA8ZTy0Vb9pPTjUSyuTJxS8Hm3g"
+}
+2026-03-18 05:40:58 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can be added successfully via API
+2026-03-18 05:40:58 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can log in successfully via API
+2026-03-18 05:40:58 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:40:58 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can log in successfully via API
+2026-03-18 05:40:58 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: User can log in successfully via API with ExecutionType=API
+2026-03-18 05:40:58 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 05:40:58 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-18 05:40:58 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robert92f063fd@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 05:40:59 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-18 05:40:59 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9ca6ad5d7ad001520e60c",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert92f063fd@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5Y2E2YWQ1ZDdhZDAwMTUyMGU2MGMiLCJpYXQiOjE3NzM3ODM2NTh9.9BwbW5YSt1-6hgPTrjDJdGkEY6fl6Y584AhRKHaCp9Q"
+}
+2026-03-18 05:40:59 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 05:40:59 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users/login
+2026-03-18 05:40:59 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "email" : "robert92f063fd@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 05:41:01 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 200
+2026-03-18 05:41:01 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9ca6ad5d7ad001520e60c",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert92f063fd@fake.com",
+        "__v": 2
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5Y2E2YWQ1ZDdhZDAwMTUyMGU2MGMiLCJpYXQiOjE3NzM3ODM2NTl9.RdlgQtZftKbeS4IFwlnX20d44nmp9IK9-Y-kXH6evd4"
+}
+2026-03-18 05:41:01 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can log in successfully via API
+2026-03-18 05:41:01 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can login in UI using credentials created via API
+2026-03-18 05:41:01 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:41:01 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-18 05:41:01 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-18 05:41:28 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Appium Driver initialized successfully
+2026-03-18 05:41:28 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformName = Android
+2026-03-18 05:41:28 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - deviceName = emulator-5554
+2026-03-18 05:41:28 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformVersion = 15
+2026-03-18 05:41:28 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - browserName = Chrome
+2026-03-18 05:41:28 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - chromedriverAutodownload = true
+2026-03-18 05:41:28 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - appiumServerUrl = http://localhost:4723
+2026-03-18 05:41:28 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: User can login in UI using credentials created via API
+2026-03-18 05:41:28 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: User can login in UI using credentials created via API
+2026-03-18 05:41:28 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: User can login in UI using credentials created via API with ExecutionType=Hybrid
+2026-03-18 05:41:28 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Request Method: POST
+2026-03-18 05:41:28 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - API Endpoint: /users
+2026-03-18 05:41:28 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Request Body: {
+  "firstName" : "Robert",
+  "lastName" : "Baratheon",
+  "email" : "robert58d83519@fake.com",
+  "password" : "robertbaratheon"
+}
+2026-03-18 05:41:29 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Status Code: 201
+2026-03-18 05:41:29 [main] INFO  com.cheq.demo_webshop.utils.api.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b9ca8819742000152a7737",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert58d83519@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWI5Y2E4ODE5NzQyMDAwMTUyYTc3MzciLCJpYXQiOjE3NzM3ODM2ODh9.-7zmi9PraDFLaDykXB6i2GsLmvjjoSIioIjM4xmXcCc"
+}
+2026-03-18 05:41:34 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Entered text in element: By.id: email - Text: robert58d83519@fake.com
+2026-03-18 05:41:39 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Entered text in element: By.id: password - Text: robertbaratheon
+2026-03-18 05:41:44 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Clicked on element: By.id: submit
+2026-03-18 05:41:46 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: User can login in UI using credentials created via API
+2026-03-18 05:41:49 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: User can login in UI using credentials created via API
+2026-03-18 05:41:49 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-18 05:41:49 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:41:49 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API setup completed for scenario: Site returns HTTP 200 on GET /
+2026-03-18 05:41:49 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Site returns HTTP 200 on GET / with ExecutionType=API
+2026-03-18 05:41:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - API context cleared for scenario: Site returns HTTP 200 on GET /
+2026-03-18 05:41:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-18 05:41:50 [main] INFO  com.cheq.demo_webshop.utils.common.AllureUtil - Allure categories.json written successfully at C:\Users\JunnelLMiguel\eclipse-workspace-appium-cucumber\AppiumCucumber\target\allure-results\categories.json
+2026-03-18 05:41:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - ChromeDriver autodownload enabled.
+2026-03-18 05:41:50 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Chrome mobile browser configuration applied.
+2026-03-18 05:42:05 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - Appium Driver initialized successfully
+2026-03-18 05:42:05 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformName = Android
+2026-03-18 05:42:05 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - deviceName = emulator-5554
+2026-03-18 05:42:05 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - platformVersion = 15
+2026-03-18 05:42:05 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - browserName = Chrome
+2026-03-18 05:42:05 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - chromedriverAutodownload = true
+2026-03-18 05:42:05 [main] INFO  com.cheq.demo_webshop.factory.MobileBrowserOptionsFactory - appiumServerUrl = http://localhost:4723
+2026-03-18 05:42:06 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - UI setup completed for scenario: Calculator elements should be visible
+2026-03-18 05:42:06 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Allure environment written for scenario: Calculator elements should be visible with ExecutionType=UI
+2026-03-18 05:42:07 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
+2026-03-18 05:42:08 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //input[@id='a']
+2026-03-18 05:42:09 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //input[@id='b']
+2026-03-18 05:42:09 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //select[@id='op']
+2026-03-18 05:42:09 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //button[@id='compute']
+2026-03-18 05:42:09 [main] INFO  com.cheq.demo_webshop.utils.common.ElementActionUtils - Element is displayed: By.xpath: //div[@id='result']
+2026-03-18 05:42:11 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Driver closed for scenario: Calculator elements should be visible

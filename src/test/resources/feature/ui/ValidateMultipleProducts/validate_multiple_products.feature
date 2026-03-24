@@ -1,4 +1,4 @@
-@ui 
+ 
 Feature: Validate Multiple Products Functionality
 
   Scenario: Multiple Products

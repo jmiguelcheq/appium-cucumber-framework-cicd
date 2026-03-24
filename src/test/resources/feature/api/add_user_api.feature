@@ -1,4 +1,4 @@
-@api @addUser
+@api @regression @addUser
 Feature: Add User API
 
   Scenario: User can be added successfully via API

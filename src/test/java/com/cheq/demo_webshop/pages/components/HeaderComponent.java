@@ -1,6 +1,6 @@
 package com.cheq.demo_webshop.pages.components;
 import com.cheq.demo_webshop.factory.TextLabelFactory;
-import com.cheq.demo_webshop.utils.ElementActionUtils;
+import com.cheq.demo_webshop.utils.common.ElementActionUtils;
 
 import io.appium.java_client.android.AndroidDriver;
 

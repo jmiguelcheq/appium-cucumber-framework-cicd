@@ -6,10 +6,10 @@ import java.util.Map;
 import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.datatable.DataTable;
 import com.cheq.demo_webshop.manager.DriverManager;
-import com.cheq.demo_webshop.pages.mobile.BookPage;
-import com.cheq.demo_webshop.pages.mobile.CartPage;
-import com.cheq.demo_webshop.pages.mobile.HomePage;
-import com.cheq.demo_webshop.pages.mobile.LoginPage;
+import com.cheq.demo_webshop.pages.BookPage;
+import com.cheq.demo_webshop.pages.CartPage;
+import com.cheq.demo_webshop.pages.HomePage;
+import com.cheq.demo_webshop.pages.LoginPage;
 
 import io.cucumber.java.en.*;
 

@@ -1,4 +1,4 @@
-@ui 
+ 
 Feature: Validate Cart
 
   Scenario: Validate added product

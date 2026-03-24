@@ -1,16 +1,19 @@
 package com.cheq.demo_webshop.stepdefinitions.api;
 
+import com.cheq.demo_webshop.constants.ApiResponseType;
 import com.cheq.demo_webshop.manager.ApiContext;
 import com.cheq.demo_webshop.models.request.AddUserRequest;
-import com.cheq.demo_webshop.pages.api.AddUserApi;
-import com.cheq.demo_webshop.utils.ApiTestDataGenerator;
-import com.cheq.demo_webshop.utils.ResponseValidator;
+import com.cheq.demo_webshop.models.response.AddUserResponse;
+import com.cheq.demo_webshop.services.AddUserApi;
+import com.cheq.demo_webshop.utils.api.ApiTestDataGenerator;
+import com.cheq.demo_webshop.utils.api.JsonSerializerUtil;
+import com.cheq.demo_webshop.utils.api.ResponseValidator;
+import com.cheq.demo_webshop.utils.common.AllureUtil;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
-import com.cheq.demo_webshop.models.response.AddUserResponse;
 
 public class AddUserApiSteps {
 
@@ -21,7 +24,9 @@ public class AddUserApiSteps {
 
     @Given("User prepares a valid add user request payload")
     public void userPreparesAValidAddUserRequestPayload() {
-    	addUserRequest = ApiTestDataGenerator.generateValidAddUserRequest();
+        addUserRequest = ApiTestDataGenerator.generateValidAddUserRequest();
+
+        AllureUtil.attachJson("API Request Body", JsonSerializerUtil.toJson(addUserRequest));
     }
 
     @When("User sends the add user API request")
@@ -35,22 +40,19 @@ public class AddUserApiSteps {
         ApiContext.set("email", addUserResponse.getUser().getEmail());
     }
 
-//    @Then("API response status code should be {int}")
-//    public void apiResponseStatusCodeShouldBe(Integer expectedStatusCode) {
-//        ResponseValidator.validateStatusCode(response, expectedStatusCode);
-//    }
-
     @Then("API response should contain the created user details")
     public void apiResponseShouldContainTheCreatedUserDetails() {
-    	ResponseValidator.validateFieldEquals(response, "user.firstName", addUserRequest.getFirstName());
-//    	org.junit.Assert.assertEquals(addUserRequest.getFirstName(), addUserResponse.getUser().getFirstName());
-        org.junit.Assert.assertEquals(addUserRequest.getLastName(), addUserResponse.getUser().getLastName());
-        org.junit.Assert.assertEquals(addUserRequest.getEmail(), addUserResponse.getUser().getEmail());
-        org.junit.Assert.assertNotNull(addUserResponse.getUser().getId());
+        ResponseValidator.validateResponseType(response, ApiResponseType.JSON);
+        ResponseValidator.validateJsonFieldValue(response, "user.firstName", addUserRequest.getFirstName());
+        ResponseValidator.validateJsonFieldValue(response, "user.lastName", addUserRequest.getLastName());
+        ResponseValidator.validateJsonFieldValue(response, "user.email", addUserRequest.getEmail());
+        ResponseValidator.validateJsonFieldExists(response, "user.id");
     }
 
     @Then("API response should contain an authentication token")
     public void apiResponseShouldContainAnAuthenticationToken() {
-    	org.junit.Assert.assertNotNull(addUserResponse.getToken());
+        ResponseValidator.validateJsonFieldExists(response, "token");
+
+        AllureUtil.attachJson("API Response Body", response.getBody().asPrettyString());
     }
 }

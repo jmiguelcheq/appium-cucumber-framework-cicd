@@ -1,4 +1,4 @@
-@ui @radioTest
+@radioTest
 Feature: Test Gender
 
   Scenario: Verify and select radio buttons

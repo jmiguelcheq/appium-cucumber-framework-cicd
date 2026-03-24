@@ -1,7 +1,7 @@
 package com.cheq.demo_webshop.stepdefinitions.ui;
 
 import com.cheq.demo_webshop.manager.DriverManager;
-import com.cheq.demo_webshop.pages.mobile.*;
+import com.cheq.demo_webshop.pages.*;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.java.en.And;

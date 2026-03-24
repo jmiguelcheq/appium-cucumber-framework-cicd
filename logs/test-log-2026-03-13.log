@@ -1,0 +1,416 @@
+2026-03-13 04:16:24 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-13 04:16:24 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-13 04:16:24 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
+2026-03-13 04:16:24 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
+2026-03-13 04:16:24 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
+2026-03-13 04:16:24 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
+2026-03-13 04:18:47 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-13 04:19:18 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Site returns HTTP 200 on GET /
+2026-03-13 04:19:24 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Site returns HTTP 200 on GET /
+2026-03-13 04:19:24 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-13 04:19:37 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Calculator elements should be visible
+2026-03-13 04:19:37 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
+2026-03-13 04:19:38 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='a']
+2026-03-13 04:19:38 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='b']
+2026-03-13 04:19:38 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //select[@id='op']
+2026-03-13 04:19:38 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //button[@id='compute']
+2026-03-13 04:19:38 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //div[@id='result']
+2026-03-13 04:19:40 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Calculator elements should be visible
+2026-03-13 04:19:40 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
+2026-03-13 04:19:49 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (add)
+2026-03-13 04:19:49 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 2.0
+2026-03-13 04:19:50 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 3.0
+2026-03-13 04:19:51 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: add
+2026-03-13 04:19:52 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 04:19:55 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (add)
+2026-03-13 04:19:55 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
+2026-03-13 04:20:03 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (subtract)
+2026-03-13 04:20:04 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
+2026-03-13 04:20:05 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 4.0
+2026-03-13 04:20:06 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: sub
+2026-03-13 04:20:07 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 04:20:09 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (subtract)
+2026-03-13 04:20:09 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
+2026-03-13 04:20:17 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (multiply)
+2026-03-13 04:20:18 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 7.0
+2026-03-13 04:20:18 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 6.0
+2026-03-13 04:20:19 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: mul
+2026-03-13 04:20:20 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 04:20:22 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (multiply)
+2026-03-13 04:20:22 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
+2026-03-13 04:20:31 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (divide)
+2026-03-13 04:20:32 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
+2026-03-13 04:20:33 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 5.0
+2026-03-13 04:20:35 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: div
+2026-03-13 04:20:35 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 04:20:37 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (divide)
+2026-03-13 08:51:07 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-13 08:51:07 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: Site returns HTTP 200 on GET /
+2026-03-13 08:51:17 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: Site returns HTTP 200 on GET /
+2026-03-13 08:51:17 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-13 08:52:11 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
+2026-03-13 08:52:18 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
+2026-03-13 08:52:24 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
+2026-03-13 08:52:28 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
+2026-03-13 08:52:56 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-13 08:53:01 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-13 08:53:06 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
+2026-03-13 08:53:12 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
+2026-03-13 08:53:21 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
+2026-03-13 08:53:28 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
+2026-03-13 08:58:17 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-13 08:58:30 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-13 08:58:37 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
+2026-03-13 08:58:44 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
+2026-03-13 08:58:52 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
+2026-03-13 08:58:59 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
+2026-03-13 08:59:43 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-13 08:59:52 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
+2026-03-13 08:59:56 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
+2026-03-13 09:00:00 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
+2026-03-13 09:00:07 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
+2026-03-13 09:32:07 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-13 09:33:05 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Calculator elements should be visible
+2026-03-13 09:33:06 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
+2026-03-13 09:33:12 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='a']
+2026-03-13 09:33:13 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='b']
+2026-03-13 09:33:13 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //select[@id='op']
+2026-03-13 09:33:14 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //button[@id='compute']
+2026-03-13 09:33:15 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //div[@id='result']
+2026-03-13 09:33:19 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Calculator elements should be visible
+2026-03-13 09:33:19 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
+2026-03-13 09:33:51 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (add)
+2026-03-13 09:33:56 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 2.0
+2026-03-13 09:33:59 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 3.0
+2026-03-13 09:34:03 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: add
+2026-03-13 09:34:05 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 09:34:10 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (add)
+2026-03-13 09:34:10 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
+2026-03-13 09:34:33 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (subtract)
+2026-03-13 09:34:39 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
+2026-03-13 09:34:41 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 4.0
+2026-03-13 09:34:45 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: sub
+2026-03-13 09:34:46 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 09:34:50 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (subtract)
+2026-03-13 09:34:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
+2026-03-13 09:35:11 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (multiply)
+2026-03-13 09:35:13 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 7.0
+2026-03-13 09:35:16 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 6.0
+2026-03-13 09:35:20 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: mul
+2026-03-13 09:35:22 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 09:35:27 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (multiply)
+2026-03-13 09:35:27 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
+2026-03-13 09:35:45 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (divide)
+2026-03-13 09:35:47 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
+2026-03-13 09:35:49 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 5.0
+2026-03-13 09:35:54 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: div
+2026-03-13 09:35:55 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 09:36:01 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (divide)
+2026-03-13 10:09:50 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can be added successfully via API
+2026-03-13 10:09:50 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: User can be added successfully via API
+2026-03-13 10:09:51 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
+2026-03-13 10:09:51 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users
+2026-03-13 10:09:51 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.AddUserRequest@7412a438
+2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 201
+2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b371ef19c156001532c7b9",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert1505d3a5@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzNzFlZjE5YzE1NjAwMTUzMmM3YjkiLCJpYXQiOjE3NzMzNjc3OTF9.HMzJNqA9G3NjliL9iro3gr0IqKqpW57hKShTB3GyfUs"
+}
+2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: User can be added successfully via API
+2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can log in successfully via API
+2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: User can log in successfully via API
+2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
+2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users
+2026-03-13 10:09:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.AddUserRequest@14be750c
+2026-03-13 10:09:55 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 201
+2026-03-13 10:09:55 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b371f119c156001532c7bb",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robertec13d715@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzNzFmMTE5YzE1NjAwMTUzMmM3YmIiLCJpYXQiOjE3NzMzNjc3OTN9.uF4XThXlqjbeyLPCuudAYqFls7RlNaMuygZ9VY5L69c"
+}
+2026-03-13 10:09:55 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
+2026-03-13 10:09:55 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users/login
+2026-03-13 10:09:55 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.LoginUserRequest@7548e1fb
+2026-03-13 10:09:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 200
+2026-03-13 10:09:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b371f119c156001532c7bb",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robertec13d715@fake.com",
+        "__v": 2
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzNzFmMTE5YzE1NjAwMTUzMmM3YmIiLCJpYXQiOjE3NzMzNjc3OTR9.EGtTLR7p5U6W4LB1L7qAxPO1MKO7ZMsKxS9ZDUNRMeg"
+}
+2026-03-13 10:09:56 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: User can log in successfully via API
+2026-03-13 10:09:56 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-13 10:09:56 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: Site returns HTTP 200 on GET /
+2026-03-13 10:09:57 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: Site returns HTTP 200 on GET /
+2026-03-13 10:17:53 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can be added successfully via API
+2026-03-13 10:17:53 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: User can be added successfully via API
+2026-03-13 10:17:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
+2026-03-13 10:17:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users
+2026-03-13 10:17:53 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.AddUserRequest@6ac4c3f7
+2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 201
+2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b373d219c156001532c7c0",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert258a6275@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzNzNkMjE5YzE1NjAwMTUzMmM3YzAiLCJpYXQiOjE3NzMzNjgyNzR9.nPWNnK4kPu_H-GROj3N71ebPBcmsxZmJOcgXfA7FVwc"
+}
+2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: User can be added successfully via API
+2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can log in successfully via API
+2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: User can log in successfully via API
+2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
+2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users
+2026-03-13 10:17:56 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.AddUserRequest@14be750c
+2026-03-13 10:17:57 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 201
+2026-03-13 10:17:57 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b373d319c156001532c7c2",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert491dd48b@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzNzNkMzE5YzE1NjAwMTUzMmM3YzIiLCJpYXQiOjE3NzMzNjgyNzV9.Df85SNSeXWNUxHOHne40F_hERPG_6Fl0f2zdK6rzSBQ"
+}
+2026-03-13 10:17:57 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
+2026-03-13 10:17:57 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users/login
+2026-03-13 10:17:57 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.LoginUserRequest@7548e1fb
+2026-03-13 10:17:58 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 200
+2026-03-13 10:17:58 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b373d319c156001532c7c2",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert491dd48b@fake.com",
+        "__v": 2
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzNzNkMzE5YzE1NjAwMTUzMmM3YzIiLCJpYXQiOjE3NzMzNjgyNzd9.FOGaGaFhigdU9W4iGzumVNmMCDkjcT4ty6zeiMSj6Co"
+}
+2026-03-13 10:17:58 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: User can log in successfully via API
+2026-03-13 10:17:58 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-13 10:17:58 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: Site returns HTTP 200 on GET /
+2026-03-13 10:17:59 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: Site returns HTTP 200 on GET /
+2026-03-13 10:18:16 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-13 10:19:02 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Calculator elements should be visible
+2026-03-13 10:19:03 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
+2026-03-13 10:19:08 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='a']
+2026-03-13 10:19:08 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='b']
+2026-03-13 10:19:09 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //select[@id='op']
+2026-03-13 10:19:09 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //button[@id='compute']
+2026-03-13 10:19:09 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //div[@id='result']
+2026-03-13 10:19:12 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Calculator elements should be visible
+2026-03-13 10:19:12 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
+2026-03-13 10:19:33 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (add)
+2026-03-13 10:19:35 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 2.0
+2026-03-13 10:19:38 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 3.0
+2026-03-13 10:19:40 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: add
+2026-03-13 10:19:42 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 10:19:46 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (add)
+2026-03-13 10:19:46 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
+2026-03-13 10:20:13 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (subtract)
+2026-03-13 10:20:19 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
+2026-03-13 10:20:22 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 4.0
+2026-03-13 10:20:28 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: sub
+2026-03-13 10:20:28 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 10:20:33 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (subtract)
+2026-03-13 10:20:33 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
+2026-03-13 10:21:00 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (multiply)
+2026-03-13 10:21:01 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 7.0
+2026-03-13 10:21:06 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 6.0
+2026-03-13 10:21:09 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: mul
+2026-03-13 10:21:11 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 10:21:14 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (multiply)
+2026-03-13 10:21:14 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
+2026-03-13 10:21:31 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (divide)
+2026-03-13 10:21:33 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
+2026-03-13 10:21:34 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 5.0
+2026-03-13 10:21:39 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: div
+2026-03-13 10:21:40 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 10:21:43 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (divide)
+2026-03-13 15:05:31 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can be added successfully via API
+2026-03-13 15:05:31 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: User can be added successfully via API
+2026-03-13 15:05:32 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
+2026-03-13 15:05:32 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users
+2026-03-13 15:05:32 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.AddUserRequest@c02670f
+2026-03-13 15:05:34 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 201
+2026-03-13 15:05:34 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b3b73eed7f8200150d3042",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "robert88f056f0@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzYjczZWVkN2Y4MjAwMTUwZDMwNDIiLCJpYXQiOjE3NzMzODU1MzR9.f9L07qHO1y_Bht7gYXmsJ66_gz29HjRhaSOh3osVkeM"
+}
+2026-03-13 15:05:34 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: User can be added successfully via API
+2026-03-13 15:05:35 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: User can log in successfully via API
+2026-03-13 15:05:35 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: User can log in successfully via API
+2026-03-13 15:05:35 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
+2026-03-13 15:05:35 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users
+2026-03-13 15:05:35 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.AddUserRequest@27afbf14
+2026-03-13 15:05:36 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 201
+2026-03-13 15:05:36 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b3b73fed7f8200150d3044",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "roberte0df6d46@fake.com",
+        "__v": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzYjczZmVkN2Y4MjAwMTUwZDMwNDQiLCJpYXQiOjE3NzMzODU1MzV9.3FpddMzedVnRcChZ6QGKMC0F1iJ6AteS4naMLSOos0g"
+}
+2026-03-13 15:05:36 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Request Method: POST
+2026-03-13 15:05:36 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - API Endpoint: /users/login
+2026-03-13 15:05:36 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Request Body: com.cheq.demo_webshop.models.request.LoginUserRequest@36d697ab
+2026-03-13 15:05:37 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Status Code: 200
+2026-03-13 15:05:37 [main] INFO  com.cheq.demo_webshop.utils.ApiClient - Response Body: {
+    "user": {
+        "_id": "69b3b73fed7f8200150d3044",
+        "firstName": "Robert",
+        "lastName": "Baratheon",
+        "email": "roberte0df6d46@fake.com",
+        "__v": 2
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWIzYjczZmVkN2Y4MjAwMTUwZDMwNDQiLCJpYXQiOjE3NzMzODU1Mzd9.fEi83luYbwfqEcT6ugNtRQJaD8eqHaMCF6vlvX6YlAg"
+}
+2026-03-13 15:05:37 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: User can log in successfully via API
+2026-03-13 15:05:37 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Login
+2026-03-13 15:06:27 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Login
+2026-03-13 15:06:48 [main] ERROR com.cheq.demo_webshop.utils.ElementActionUtils - Failed to click on element: By.xpath: //a[text()='Log in']
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //a[text()='Log in'] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Log in']"}.
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\JunnelLMiguel\ecli..., appium:databaseEnabled: false, appium:desired: {appActivity: com.android.chrome/com.goog..., appPackage: com.android.chrome, automationName: UIAutomator2, browserName: Chrome, chromedriverExecutable: C:\Users\JunnelLMiguel\ecli..., deviceName: emulator-5554, nativeWebScreenshot: true, platformName: ANDROID, platformVersion: 15, showChromedriverLog: true}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:showChromedriverLog: true, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, platformName: ANDROID}
+Session ID: 3c581396-daec-4bdd-806c-f8fbb4b6a62e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
+	at com.cheq.demo_webshop.utils.WaitUtil.waitForElementClickable(WaitUtil.java:55)
+	at com.cheq.demo_webshop.utils.ElementActionUtils.tap(ElementActionUtils.java:33)
+	at com.cheq.demo_webshop.pages.components.HeaderComponent.clickLoginLink(HeaderComponent.java:27)
+	at com.cheq.demo_webshop.stepdefinitions.ui.LoginSteps.user_navigate_to_webshop_login_page(LoginSteps.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:100)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+2026-03-13 15:06:50 [main] ERROR io.qameta.allure.AllureLifecycle - Could not update step: step with uuid b755509a-e6cc-4176-b3f9-6261b7ffef30 not found
+2026-03-13 15:06:52 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Login
+2026-03-13 15:06:52 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Site returns HTTP 200 on GET /
+2026-03-13 15:06:52 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API setup completed for scenario: Site returns HTTP 200 on GET /
+2026-03-13 15:06:52 [main] INFO  com.cheq.demo_webshop.hooks.ApiHooks - API context cleared for scenario: Site returns HTTP 200 on GET /
+2026-03-13 15:06:52 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Calculator elements should be visible
+2026-03-13 15:07:12 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Calculator elements should be visible
+2026-03-13 15:07:13 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //h1[normalize-space()='Simple Calculator App']
+2026-03-13 15:07:14 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='a']
+2026-03-13 15:07:14 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //input[@id='b']
+2026-03-13 15:07:14 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //select[@id='op']
+2026-03-13 15:07:14 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //button[@id='compute']
+2026-03-13 15:07:15 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Element is displayed: By.xpath: //div[@id='result']
+2026-03-13 15:07:17 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Calculator elements should be visible
+2026-03-13 15:07:17 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (add)
+2026-03-13 15:07:36 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (add)
+2026-03-13 15:07:42 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 2.0
+2026-03-13 15:07:45 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 3.0
+2026-03-13 15:07:47 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: add
+2026-03-13 15:07:49 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 15:07:54 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (add)
+2026-03-13 15:07:54 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (subtract)
+2026-03-13 15:08:13 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (subtract)
+2026-03-13 15:08:15 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
+2026-03-13 15:08:17 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 4.0
+2026-03-13 15:08:31 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: sub
+2026-03-13 15:08:33 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 15:08:38 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (subtract)
+2026-03-13 15:08:38 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (multiply)
+2026-03-13 15:08:56 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (multiply)
+2026-03-13 15:08:58 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 7.0
+2026-03-13 15:09:00 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 6.0
+2026-03-13 15:09:04 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: mul
+2026-03-13 15:09:05 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 15:09:09 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (multiply)
+2026-03-13 15:09:09 [main] INFO  com.cheq.demo_webshop.hooks.Hooks - Starting scenario: Perform basic math: (divide)
+2026-03-13 15:09:29 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - UI setup completed for scenario: Perform basic math: (divide)
+2026-03-13 15:09:33 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='a'] - Text: 10.0
+2026-03-13 15:09:37 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Entered text in element: By.xpath: //input[@id='b'] - Text: 5.0
+2026-03-13 15:09:41 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Select in the dropdown: By.xpath: //select[@id='op'] - Text: div
+2026-03-13 15:09:43 [main] INFO  com.cheq.demo_webshop.utils.ElementActionUtils - Clicked on element: By.xpath: //button[@id='compute']
+2026-03-13 15:09:47 [main] INFO  com.cheq.demo_webshop.hooks.UiHooks - Driver closed for scenario: Perform basic math: (divide)

@@ -7,7 +7,11 @@ import io.restassured.response.Response;
 
 public class ApiContext {
 
-    private static final ThreadLocal<Map<String, Object>> context = ThreadLocal.withInitial(HashMap::new);
+    private static final ThreadLocal<Map<String, Object>> context =
+            ThreadLocal.withInitial(HashMap::new);
+
+    private ApiContext() {
+    }
 
     public static void set(String key, Object value) {
         context.get().put(key, value);
@@ -19,22 +23,15 @@ public class ApiContext {
 
     public static String getString(String key) {
         Object value = context.get().get(key);
-        return value != null ? value.toString() : null;
+        return value == null ? null : value.toString();
     }
 
-    public static boolean contains(String key) {
-        return context.get().containsKey(key);
-    }
-
-    public static void remove(String key) {
-        context.get().remove(key);
+    public static Response getResponse() {
+        return (Response) context.get().get("response");
     }
 
     public static void clear() {
+        context.get().clear();
         context.remove();
-    }
-    
-    public static Response getResponse() {
-        return (Response) context.get().get("response");
     }
 }

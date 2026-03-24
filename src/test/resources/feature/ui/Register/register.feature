@@ -1,4 +1,4 @@
-@ui 
+ 
 Feature: Register Functionality
 
   Scenario: Register

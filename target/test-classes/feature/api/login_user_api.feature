@@ -1,6 +1,6 @@
-@api @loginUser
+@api @regression @loginUser
 Feature: Login User API
-
+	
   Scenario: User can log in successfully via API
     Given User has valid credentials for login API
     When User sends the login user API request

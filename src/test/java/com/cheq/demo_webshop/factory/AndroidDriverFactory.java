@@ -3,13 +3,19 @@ package com.cheq.demo_webshop.factory;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 
-import java.io.File;
 import java.net.URI;
 import java.net.URL;
 
-import com.cheq.demo_webshop.utils.ConfigReader;
+import org.apache.logging.log4j.Logger;
+
+import com.cheq.demo_webshop.constants.ExecutionMode;
+import com.cheq.demo_webshop.manager.ExecutionContextManager;
+import com.cheq.demo_webshop.utils.common.ConfigReader;
+import com.cheq.demo_webshop.utils.common.LoggerUtil;
 
 public class AndroidDriverFactory {
+	
+    private static final Logger logger = LoggerUtil.getLogger(AndroidDriverFactory.class);
 
     public static AndroidDriver loadDriver() throws Exception {
 
@@ -20,64 +26,86 @@ public class AndroidDriverFactory {
         String deviceName = System.getProperty("deviceName", ConfigReader.get("deviceName"));
         String platformVersion = System.getProperty("platformVersion", ConfigReader.get("platformVersion"));
         String automationName = System.getProperty("automationName", ConfigReader.get("automationName"));
-        String browserName = System.getProperty("browserName", ConfigReader.get("browserName"));
         String urlPath = System.getProperty("appium.server.url", ConfigReader.get("urlPath"));
 
-        String chromeDriverFilePath = System.getProperty("chromedriverPath", ConfigReader.get("chromedriverPath"));
-        String chromedriverExecutableDir = System.getProperty("chromedriverExecutableDir", "");
-        String chromedriverChromeMappingFile = System.getProperty("chromedriverChromeMappingFile", "");
-
-        UiAutomator2Options options = new UiAutomator2Options();
+        ExecutionMode executionMode = ExecutionContextManager.getExecutionMode();
 
         try {
-            options.setPlatformName(platformName);
-            options.setDeviceName(deviceName);
+            UiAutomator2Options options;
 
-            if (platformVersion != null && !platformVersion.isBlank()) {
-                options.setPlatformVersion(platformVersion);
-            }
+            if (executionMode == ExecutionMode.MOBILE_WEB) {
+                String browserName = System.getProperty("browserName", ConfigReader.get("browserName"));
 
-            options.setAutomationName(automationName);
-            options.setCapability("browserName", browserName);
-            options.setCapability("showChromedriverLog", true);
-            options.setCapability("nativeWebScreenshot", true);
+                String chromedriverExecutableDir = System.getProperty(
+                        "chromedriverExecutableDir",
+                        ConfigReader.get("chromedriverExecutableDir")
+                );
 
-            // CI mode: use Appium auto-download / managed chromedrivers
-            if (chromedriverExecutableDir != null && !chromedriverExecutableDir.isBlank()) {
-                options.setCapability("chromedriverExecutableDir", chromedriverExecutableDir);
-                System.out.println("Using chromedriverExecutableDir = " + chromedriverExecutableDir);
+                String chromedriverChromeMappingFile = System.getProperty(
+                        "chromedriverChromeMappingFile",
+                        ConfigReader.get("chromedriverChromeMappingFile")
+                );
 
-                if (chromedriverChromeMappingFile != null && !chromedriverChromeMappingFile.isBlank()) {
-                    options.setCapability("chromedriverChromeMappingFile", chromedriverChromeMappingFile);
-                    System.out.println("Using chromedriverChromeMappingFile = " + chromedriverChromeMappingFile);
-                }
+                boolean chromedriverAutodownload = Boolean.parseBoolean(
+                        System.getProperty("chromedriverAutodownload", ConfigReader.get("chromedriverAutodownload"))
+                );
 
-                System.out.println("CI/Appium-managed Chromedriver mode enabled. Skipping local chromedriverExecutable.");
-            } 
-            // Local mode: use explicit local chromedriver if available
-            else if (chromeDriverFilePath != null && !chromeDriverFilePath.isBlank()) {
-                File chromeDriverFile = new File(chromeDriverFilePath);
-                if (chromeDriverFile.exists()) {
-                    options.setCapability("chromedriverExecutable", chromeDriverFile.getAbsolutePath());
-                    System.out.println("Using local chromedriverExecutable = " + chromeDriverFile.getAbsolutePath());
-                } else {
-                    System.out.println("Configured chromedriverPath not found: " + chromeDriverFile.getAbsolutePath());
-                }
+                options = MobileBrowserOptionsFactory.buildOptions(
+                        platformName,
+                        deviceName,
+                        platformVersion,
+                        automationName,
+                        browserName,
+                        chromedriverExecutableDir,
+                        chromedriverChromeMappingFile,
+                        chromedriverAutodownload
+                );
+
+                logger.info("Initializing Appium driver in MOBILE_WEB mode");
+                logger.info("browserName = {}", browserName);
+                logger.info("chromedriverAutodownload = {}", chromedriverAutodownload);
+
+            } else if (executionMode == ExecutionMode.NATIVE_APP) {
+                String appPackage = System.getProperty("appPackage", ConfigReader.get("appPackage"));
+                String appActivity = System.getProperty("appActivity", ConfigReader.get("appActivity"));
+                boolean noReset = Boolean.parseBoolean(
+                        System.getProperty("noReset", ConfigReader.get("noReset"))
+                );
+
+                options = NativeAppOptionsFactory.buildOptions(
+                        platformName,
+                        deviceName,
+                        platformVersion,
+                        automationName,
+                        appPackage,
+                        appActivity,
+                        noReset
+                );
+
+                logger.info("Initializing Appium driver in NATIVE_APP mode");
+                logger.info("appPackage = {}", appPackage);
+                logger.info("appActivity = {}", appActivity);
+                logger.info("noReset = {}", noReset);
+
+            } else {
+                throw new IllegalStateException("Unsupported execution mode: " + executionMode);
             }
 
             URL url = URI.create(urlPath).toURL();
             AndroidDriver driver = new AndroidDriver(url, options);
 
-            System.out.println("Appium Driver initialized successfully");
-            System.out.println("platformName = " + platformName);
-            System.out.println("deviceName = " + deviceName);
-            System.out.println("platformVersion = " + platformVersion);
-            System.out.println("browserName = " + browserName);
-            System.out.println("appiumServerUrl = " + urlPath);
+            logger.info("Appium Driver initialized successfully");
+            logger.info("platformName = {}", platformName);
+            logger.info("deviceName = {}", deviceName);
+            logger.info("platformVersion = {}", platformVersion);
+            logger.info("automationName = {}", automationName);
+            logger.info("appiumServerUrl = {}", urlPath);
+            logger.info("executionMode = {}", executionMode);
 
             return driver;
 
         } catch (Exception e) {
+            logger.error("Error initializing the Appium driver", e);
             throw new Exception("Error initializing the Appium driver: " + e.getMessage(), e);
         }
     }

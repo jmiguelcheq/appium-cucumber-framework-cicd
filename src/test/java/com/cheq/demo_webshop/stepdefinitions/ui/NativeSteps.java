@@ -1,9 +1,9 @@
 package com.cheq.demo_webshop.stepdefinitions.ui;
 
 import com.cheq.demo_webshop.manager.DriverManager;
-import com.cheq.demo_webshop.pages.mobile.HomePage;
-import com.cheq.demo_webshop.pages.mobile.LoginPage;
-import com.cheq.demo_webshop.pages.mobile.NativePage;
+import com.cheq.demo_webshop.pages.HomePage;
+import com.cheq.demo_webshop.pages.LoginPage;
+import com.cheq.demo_webshop.pages.NativePage;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.datatable.DataTable;

@@ -1,4 +1,4 @@
-@ui @remove
+@remove
 Feature: Verify Successful Removal of Item
 
   Scenario: Remove Products from Cart

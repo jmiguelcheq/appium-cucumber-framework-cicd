@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","35676","User can login in UI using credentials created via API","","Mon Mar 23 13:28:16 PST 2026","passed","Mon Mar 23 13:28:51 PST 2026","","Login to Contact List UI using API-created user","User can login in UI using credentials created via API",""
+"","2460","User can log in successfully via API","","Mon Mar 23 13:28:13 PST 2026","passed","Mon Mar 23 13:28:16 PST 2026","","Login User API","User can log in successfully via API",""
+"","38930","Verify switching from mobile web to native app with UI validation","","Mon Mar 23 13:32:27 PST 2026","passed","Mon Mar 23 13:33:06 PST 2026","","Application Switching Validation","Verify switching from mobile web to native app with UI validation",""
+"","3404","User can be added successfully via API","","Mon Mar 23 13:28:10 PST 2026","passed","Mon Mar 23 13:28:13 PST 2026","","Add User API","User can be added successfully via API",""
+"","1413","Site returns HTTP 200 on GET /","","Mon Mar 23 13:28:51 PST 2026","passed","Mon Mar 23 13:28:53 PST 2026","","API uptime check for calculator site","Site returns HTTP 200 on GET /",""
+"","19869","Calculator elements should be visible","","Mon Mar 23 13:28:53 PST 2026","passed","Mon Mar 23 13:29:13 PST 2026","","Check UI Elements visibility","Calculator elements should be visible",""

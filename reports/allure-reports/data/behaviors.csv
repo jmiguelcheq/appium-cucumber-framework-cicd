@@ -1,0 +1,7 @@
+"BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
+"0","","0","Login to Contact List UI using API-created user","1","0","User can login in UI using credentials created via API","0"
+"0","","0","Login User API","1","0","User can log in successfully via API","0"
+"0","","0","Application Switching Validation","1","0","Verify switching from mobile web to native app with UI validation","0"
+"0","","0","Add User API","1","0","User can be added successfully via API","0"
+"0","","0","API uptime check for calculator site","1","0","Site returns HTTP 200 on GET /","0"
+"0","","0","Check UI Elements visibility","1","0","Calculator elements should be visible","0"

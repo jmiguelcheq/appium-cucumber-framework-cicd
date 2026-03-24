@@ -1,4 +1,4 @@
-@ui @cicd
+@ui @regression @cicd
 Feature: Check UI Elements visibility
   Scenario: Calculator elements should be visible
     Given User is in the calculator page

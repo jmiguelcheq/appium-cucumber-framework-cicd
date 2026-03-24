@@ -3,9 +3,9 @@ package com.cheq.demo_webshop.stepdefinitions.ui;
 import io.cucumber.java.en.*;
 
 import com.cheq.demo_webshop.manager.DriverManager;
-import com.cheq.demo_webshop.pages.mobile.CartPage;
-import com.cheq.demo_webshop.pages.mobile.HomePage;
-import com.cheq.demo_webshop.pages.mobile.MultipleProductsPage;
+import com.cheq.demo_webshop.pages.CartPage;
+import com.cheq.demo_webshop.pages.HomePage;
+import com.cheq.demo_webshop.pages.MultipleProductsPage;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.datatable.DataTable;
