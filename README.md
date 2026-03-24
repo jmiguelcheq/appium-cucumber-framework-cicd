@@ -1,4 +1,4 @@
-# Cucumber Java Automation Framework
+# Appium Cucumber Java Automation Framework
 
 
 ## Table of Contents
@@ -78,11 +78,11 @@ cd path\to\your\desired\folder
 ```
 3. Clone the repository using the following command:
 ```
-https://github.com/username/AppiumCucumberFramework.git
+https://github.com/jmiguelcheq/appium-cucumber-framework-cicd.git
 ```
 #### 2. Open the Cloned Project in Eclipse IDE for Java Developers
 
-1. Open **Eclipse IDE for Java Developers**
+1. Open Eclipse IDE for Java Developers
 2. Select and open workspace
 3. Click File->Open Projects from File System
 4. Click Directory to input source and select the project
