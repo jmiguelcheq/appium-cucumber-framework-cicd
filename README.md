@@ -65,9 +65,9 @@ Appium Cucumber Java Framework is a mobile test automation framework designed to
         - %ANDROID_HOME%\platform-tools
         - %ANDROID_HOME%\build-tools
     - Save and restart terminal
- 7. **Install Eclipse IDE** 
-    - Download and install Eclipse IDE for Java Developers
-    - Search and Open Eclipse IDE for Java Developers
+ 7. **Install IntelliJ IDEA** 
+    - Download and install IntelliJ IDEA.
+    - Search and Open IntelliJ IDEA
 
 **Installation Steps:**
 #### 1. Clone the Repository to Your Local Machine (Using CMD)
@@ -82,15 +82,25 @@ https://github.com/jmiguelcheq/appium-cucumber-framework-cicd.git
 ```
 #### 2. Open the Cloned Project in Eclipse IDE for Java Developers
 
-1. Open Eclipse IDE for Java Developers
-2. Select and open workspace
-3. Click File->Open Projects from File System
-4. Click Directory to input source and select the project
-5. Click **Finish**.
-6. Wait for Eclipse IDE to index the project and download dependencies
+1. Open **IntelliJ IDEA**
+2. Click **Open**  
+   *(or go to `File → Open` if a project is already open)*.
+3. Select the cloned folder
+4. Click **OK**.
+5. Wait for IntelliJ to index the project and download dependencies (if it is a Maven or Gradle project).
+6. Install Cucumber Plugin at IntelliJ IDEA
+    1. Open **IntelliJ IDEA**.
+    2. Click `File` → `Settings`.
+    3. In the left panel, select `Plugins`.
+    4. Click the `Marketplace` tab.
+    5. Search for **Cucumber for Java**.
+    6. Click **Install`.
+    7. Click **Restart IDE** to complete the installation.
 
-**Configuration** 
-Config properties (src/test/resources/config): Use .properties files to manage different environment URL, Bwroser and Test Data Path.
+**Configuration:**
+```
+· Config.properties: Use .properties files to manage different environment URL, Bwroser and Test Data Path.
+```
 
 
 ## Folder Structure
