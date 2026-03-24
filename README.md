@@ -55,7 +55,6 @@ Appium Cucumber Java Framework is a mobile test automation framework designed to
  5. **Install Android Studio**
     - Download and install Android Studio
     - Search and open Android Studio
-    - To create an emulator, go to Projects → More Actions →Virtual Device Manager →Create Virtual Device
  6. **Add Android SDK in System Environment Variables**
     - Open Android Studio
     - Go to Settings → Language and Frameworks → Android SDK and copy Android SDK Location (e.g., C:\Users\JunnelLMiguel\AppData\Local\Android\Sdk)
