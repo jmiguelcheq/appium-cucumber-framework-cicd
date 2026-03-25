@@ -93,7 +93,7 @@ https://github.com/jmiguelcheq/appium-cucumber-framework-cicd.git
     3. In the left panel, select `Plugins`.
     4. Click the `Marketplace` tab.
     5. Search for **Cucumber for Java**.
-    6. Click **Install`.
+    6. Click **Install**.
     7. Click **Restart IDE** to complete the installation.
 
 **Configuration:**
@@ -139,12 +139,15 @@ Open the Command Prompt, navigate to the project directory, and execute the foll
 
 To run a specific test tags, use the following command: `mvn clean test -Denv=dev -Dbrowser=chrome "-Dcucumber.filter.tags=@regression" -Dheadless=true"`
 
-## Running Tests on Eclipse IDE for Java Developers
-Open your project in Eclipse IDE for Java Developers.
+## Running Tests on IDE IntelliJ
+Open your project in IntelliJ.
 
-- Navigate to: src/test/java/com/cheq/demo_webshop/testrunner/TestRunner.java
-- Before executing, make sure to update the tags inside @CucumberOptions to match the scenarios you intend to run. For example, update **tags="@regression"** to another tag if needed, depending on the scenarios you want to execute.
-- After updating the tag, right-click on the TestRunner class → Select Run As → JUnit Test. This will automatically run all scenarios that match the specified tag and feature file(s) defined in the runner configuration.
+- **Navigate to:**
+src/test/java/com/cheq/demo_webshop/testrunner/TestRunner.java
+- Before executing, make sure to update the tags inside @CucumberOptions to match the scenarios you intend to run.
+For example, update **tags="@login"** to another tag if needed, depending on the scenarios you want to execute.
+- After updating the tag, right-click on the TestRunner class → Select Run **'TestRunner'**.
+- This will automatically run all scenarios that match the specified tag and feature file(s) defined in the runner configuration.
 
 
 ## Reporting
