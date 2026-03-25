@@ -43,6 +43,8 @@ jobs:
 
       - name: Checkout automation repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -56,10 +58,32 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Launchable CLI
+        run: pip install --upgrade launchable
+
       - name: Install Allure CLI
         run: |
           npm install -g allure-commandline@2
           allure --version
+
+      - name: Validate Launchable connection
+        env:
+          LAUNCHABLE_TOKEN: ${{ secrets.LAUNCHABLE_TOKEN }}
+        run: |
+          launchable verify
+
+      - name: Record build in Launchable
+        env:
+          LAUNCHABLE_TOKEN: ${{ secrets.LAUNCHABLE_TOKEN }}
+        run: |
+          BUILD_NAME=build-${{ github.run_number }}
+          launchable record build --name "$BUILD_NAME"
+          echo "BUILD_NAME=$BUILD_NAME" >> $GITHUB_ENV
 
       - name: Enable KVM access for Android emulator
         run: |
@@ -121,7 +145,18 @@ jobs:
 
             mvn -B clean test -Dcucumber.filter.tags='@ui and @cicd and @cicdsample' -DbaseUrl="${BASE_URL}" -DplatformName=Android -DplatformVersion=14 -DbrowserName=Chrome -DdeviceName=emulator-5554 -Dappium.server.url="http://127.0.0.1:${APPIUM_PORT}" -DchromedriverExecutableDir="${RUNNER_TEMP}/chromedrivers" -DchromedriverChromeMappingFile="${RUNNER_TEMP}/chromedriver-mapping.json"
 
-      # ---------- Reports & artifacts ----------
+      - name: Verify Cucumber JUnit XML report
+        if: ${{ always() }}
+        run: |
+          ls -l target/cucumber-junit.xml || (echo "No cucumber-junit.xml found!" && exit 1)
+
+      - name: Send Cucumber results to Launchable
+        if: ${{ always() }}
+        env:
+          LAUNCHABLE_TOKEN: ${{ secrets.LAUNCHABLE_TOKEN }}
+        run: |
+          launchable record tests maven target/cucumber-junit.xml
+
       - name: Upload raw test reports (Surefire/Cucumber/Allure results)
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
