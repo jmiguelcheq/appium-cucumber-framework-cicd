@@ -77,9 +77,9 @@ cd path\to\your\desired\folder
 ```
 3. Clone the repository using the following command:
 ```
-https://github.com/jmiguelcheq/appium-cucumber-framework-cicd.git
+git clone https://github.com/jmiguelcheq/appium-cucumber-framework-cicd.git
 ```
-#### 2. Open the Cloned Project in Eclipse IDE for Java Developers
+#### 2. Open the Cloned Project in IntelliJ IDEA
 
 1. Open **IntelliJ IDEA**
 2. Click **Open**  
